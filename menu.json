@@ -1,0 +1,218 @@
+[
+    {
+      "dishGrid__title": "Đặc biệt",
+      "ourSpecials": [
+        {
+            "key": "1",
+          "ourSpecials__item__img": "./newImage/food_special1.png",
+          "ourSpecials__item__title": "Cơm tấm <br>sà bì chưởng",
+          "ourSpecials__item__price": "60.000 VNĐ"
+        },
+        {
+            "key": "2",
+          "ourSpecials__item__img": "./newImage/food_special2.png",
+          "ourSpecials__item__title": "Phở bò",
+          "ourSpecials__item__price": "50.000 VNĐ"
+        }
+      ]
+    },
+    {
+        "dishGrid__title": "Bán Chạy",
+        "dishGrid": [
+          {
+            "dishGrid__item__img": "./newImage/banh_cuon_nha_trang_1.jpg",
+            "dishGrid__item__title": "Bánh cuốn",
+            "dishGrid__item__price": "30.000 VNĐ",
+            "dishId": 3
+          },
+          {
+            "dishGrid__item__img": "./newImage/cach-lam-banh-mi-op-la-don-gian-tai-nha-1.jpg",
+            "dishGrid__item__title": "Bánh mì ốp la",
+            "dishGrid__item__price": "20.000 VNĐ",
+            "dishId": 4
+          },
+          {
+            "dishGrid__item__img": "./newImage/T4_ComVP_Thitkhotrung_ComDaLat.jpg",
+            "dishGrid__item__title": "Cơm thịt<br> kho tàu",
+            "dishGrid__item__price": "35.000 VNĐ",
+            "dishId": 5
+          },
+          {
+            "dishGrid__item__img": "./newImage/cafe sữa tươi 600x400.png",
+            "dishGrid__item__title": "Sữa tươi Coffee",
+            "dishGrid__item__price": "27.000 VNĐ",
+            "dishId": 24
+          },
+          {
+            "dishGrid__item__img": "./newImage/mỳ ý 600x400.png",
+            "dishGrid__item__title": "Mỳ Spaghetti",
+            "dishGrid__item__price": "40.000 VNĐ",
+            "dishId": 19
+          }
+        ]
+      },
+      {
+        "dishGrid__title": "Bữa Sáng",
+        "dishGrid": [
+          {
+            "dishGrid__item__img": "./newImage/hủ tiếu.png",
+            "dishGrid__item__title": "Bánh canh <br>thập cẩm",
+            "dishGrid__item__price": "40.000 VNĐ",
+            "dishId": 6
+          },
+          {
+            "dishGrid__item__img": "./newImage/bò kho.png",
+            "dishGrid__item__title": "Bò Kho <br> Bánh mì",
+            "dishGrid__item__price": "40.000 VNĐ",
+            "dishId": 7
+          },
+          {
+            "dishGrid__item__img": "./newImage/bánh giò 600x400.png",
+            "dishGrid__item__title": "Bánh giò",
+            "dishGrid__item__price": "30.000 VNĐ",
+            "dishId": 8
+          },
+          {
+            "dishGrid__item__img": "./newImage/bánh mì.png",
+            "dishGrid__item__title": "Bánh mì <br>chả cá",
+            "dishGrid__item__price": "30.000 VNĐ",
+            "dishId": 9
+          },
+          {
+            "dishGrid__item__img": "./newImage/xôi mặn 600x400.png",
+            "dishGrid__item__title": "Xôi mặn",
+            "dishGrid__item__price": "30.000 VNĐ",
+            "dishId": 10
+          },
+          {
+            "dishGrid__item__img": "./newImage/bún chả 600x400.png",
+            "dishGrid__item__title": "Bún chả <br>Hà Nội",
+            "dishGrid__item__price": "55.000 VNĐ",
+            "dishId": 30
+          },
+          {
+            "dishGrid__item__img": "./newImage/bánh canh ghẹ 600x400.png",
+            "dishGrid__item__title": "Bánh canh <br>ghẹ",
+            "dishGrid__item__price": "65.000 VNĐ",
+            "dishId": 31
+          }
+         ]
+        },
+        {
+            "dishGrid__title": "Bữa Trưa",
+            "dishGrid": [
+              {
+                "dishGrid__item__img": "./newImage/bún bò huế 600x400.png",
+                "dishGrid__item__title": "Bún bò Huế",
+                "dishGrid__item__price": "45.000 VNĐ",
+                "dishId": 11
+              },
+              {
+                "dishGrid__item__img": "./newImage/cơm gà xào sả ơt 600x400.png",
+                "dishGrid__item__title": "Cơm gà <br>xào sả ớt",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 12
+              },
+              {
+                "dishGrid__item__img": "newImage/bún thịt nướng 600x400.png",
+                "dishGrid__item__title": "Bún thịt nướng,<br> chả giò",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 13
+              },
+              {
+                "dishGrid__item__img": "./newImage/mì xào thịt bò 600x400.png",
+                "dishGrid__item__title": "Mì xào bò",
+                "dishGrid__item__price": "35.000 VNĐ",
+                "dishId": 14
+              },
+              {
+                "dishGrid__item__img": "./newImage/trái cây 600x400.png",
+                "dishGrid__item__title": "Trái cây<br> thập cẩm",
+                "dishGrid__item__price": "20.000 VNĐ",
+                "dishId": 15
+              },
+              {
+                "dishGrid__item__img": "./newImage/cơm cháy kho quẹt 600x400.png",
+                "dishGrid__item__title": "Cơm cháy <br>kho quẹt",
+                "dishGrid__item__price": "30.000 VNĐ",
+                "dishId": 32
+              },
+              {
+                "dishGrid__item__img": "./newImage/bún đậu mắm tôm 600x400.png",
+                "dishGrid__item__title": "Bún đậu <br>mắm tôm",
+                "dishGrid__item__price": "55.000 VNĐ",
+                "dishId": 33
+              }
+            ]
+        },
+        {
+            "dishGrid__title": "Bữa Tối",
+            "dishGrid": [
+              {
+                "dishGrid__item__img": "./newImage/cơm cá kho 600x400.png",
+                "dishGrid__item__title": "Cơm cá kho",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 16
+              },
+              {
+                "dishGrid__item__img": "./newImage/sườn non xào 600x400.png",
+                "dishGrid__item__title": "Sườn non xào<br> chua ngọt",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 17
+              },
+              {
+                "dishGrid__item__img": "./newImage/thịt kho tàu 600x400.png",
+                "dishGrid__item__title": "Thịt kho tàu",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 18
+              },
+              {
+                "dishGrid__item__img": "./newImage/mỳ ý 600x400.png",
+                "dishGrid__item__title": "Mỳ Spaghetti",
+                "dishGrid__item__price": "40.000 VNĐ",
+                "dishId": 19
+              },
+              {
+                "dishGrid__item__img": "./newImage/xôi xoài 600x400.png",
+                "dishGrid__item__title": "Xôi xoài",
+                "dishGrid__item__price": "30.000 VNĐ",
+                "dishId": 20
+              }
+            ]
+        },
+        {
+            "dishGrid__title": "Đồ Uống",
+            "dishGrid": [
+              {
+                "dishGrid__item__img": "./newImage/yogurt 600x400.png",
+                "dishGrid__item__title": "Yogurt đá xay",
+                "dishGrid__item__price": "30.000 VNĐ",
+                "dishId": 21
+              },
+              {
+                "dishGrid__item__img": "./newImage/nước cam 600x400.png",
+                "dishGrid__item__title": "Cam ép",
+                "dishGrid__item__price": "30.000 VNĐ",
+                "dishId": 22
+              },
+              {
+                "dishGrid__item__img": "./newImage/cafe 600x400.png",
+                "dishGrid__item__title": "Coffee",
+                "dishGrid__item__price": "25.000 VNĐ",
+                "dishId": 23
+              },
+              {
+                "dishGrid__item__img": "./newImage/cafe sữa tươi 600x400.png",
+                "dishGrid__item__title": "Sữa tươi Coffee",
+                "dishGrid__item__price": "27.000 VNĐ",
+                "dishId": 24
+              },
+              {
+                "dishGrid__item__img": "./newImage/nước ngọt 600x400.png",
+                "dishGrid__item__title": "Nước ngọt",
+                "dishGrid__item__price": "15.000 VNĐ",
+                "dishId": 25
+              }
+            ]
+          }
+  ]
