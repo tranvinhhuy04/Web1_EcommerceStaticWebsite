@@ -1,148 +1,149 @@
 //Khoi tao danh sach san pham
 function createProduct() {
-    if (localStorage.getItem('products') == null) {
+    if (localStorage.getItem('products') != null) {
         let products = [{
             id: 1,
-            status: 1, 
-            title: 'Nấm đùi gà xào cháy tỏi',
-            img: './assets/img/products/nam-dui-ga-chay-toi.jpeg',
-            category: 'Món mặn',
+            status: 1,
+            title: 'Pizza nấm đùi gà xào tỏi',
+            img: './assets/img/products/chay1.png',
+            category: 'Pizza chay',
             price: 200000,
             desc: 'Một Món chay ngon miệng với nấm đùi gà thái chân hương, xào săn với lửa và thật nhiều tỏi băm, nêm nếm với mắm và nước tương chay, món ngon đưa cơm và rất dễ ăn cả cho người lớn và trẻ nhỏ.'
         },
         {
             id: 2,
-            status: 1, 
-            title: 'Rau xào ngũ sắc',
-            img: './assets/img/products/rau-xao-ngu-sac.png',
-            category: 'Món mặn',
+            status: 1,
+            title: 'Pizza cà chua bi và ớt chuông',
+            img: './assets/img/products/chay2.png',
+            category: 'Pizza chay',
             price: 180000,
             desc: 'Rau củ quả theo mùa tươi mới xào với nước mắm chay, gia vị để giữ được hương vị ngọt tươi nguyên thủy của rau củ, một món nhiều vitamin và chất khoáng, rất dễ ăn.'
         },
         {
             id: 3,
-            status: 1, 
-            title: 'Bánh lava phô mai nướng',
-            img: './assets/img/products/banh_lava_pho_mai_nuong.jpeg',
-            category: 'Món mặn',
-            price: 180000,
+            status: 1,
+            title: 'Pizza rau củ phô mai nướng',
+            img: './assets/img/products/chay3.png',
+            category: 'Pizza chay',
+            price: 200000,
             desc: 'Rau củ quả theo mùa tươi mới xào với nước mắm chay, gia vị để giữ được hương vị ngọt tươi nguyên thủy của rau củ, một món nhiều vitamin và chất khoáng, rất dễ ăn.'
         },
         {
             id: 4,
-            status: 1, title: 'Set lẩu thái Tomyum',
-            img: './assets/img/products/lau_thai.jpg',
-            category: 'Món mặn',
-            price: 699000,
-            desc: 'Lẩu Thái là món ăn xuất phát từ món canh chua Tom yum nổi tiếng của Thái Lan. Nước lẩu có hương vị chua chua cay cay đặc trưng. Các món nhúng lẩu gồn thịt bò, hải sản, rau xanh và các loại nấm.'
+            status: 1,
+            title: 'Pizza Chay Dứa & Ớt Chuông',
+            img: './assets/img/products/chay4.png',
+            category: 'Pizza chay',
+            price: 169900,
+            desc: 'Vị ngọt dịu của dứa hòa quyện cùng ớt chuông giòn ngọt, tạo nên hương vị tươi mới và thanh nhẹ.'
         },
         {
             id: 5,
-            status: 1, 
-            title: 'Cơm chiên cua',
-            img: './assets/img/products/com_chien_cua.png',
-            category: 'Món mặn',
+            status: 1,
+            title: 'Pizza Chay Bơ & Rau Spinach',
+            img: './assets/img/products/chay5.png',
+            category: 'Pizza chay',
             price: 280000,
-            desc: 'Cơm nấu từ gạo ST25 dẻo, hạt cơm tơi ngon, thịt cua tươi chắc nịch, bếp đảo cho săn hạt cơm, rồi đổ cua đã xào thơm vào, xúc miếng cơm chiên cua đầy đặn có thêm hành phi giòn rụm, món ngon như vậy đảm bảo tranh nhau đến miếng cuối cùng.'
+            desc: 'Vị bùi béo của bơ hòa quyện với rau spinach tươi mát, hấp dẫn từ miếng đầu tiên.'
         },
 
         {
             id: 6,
-            status: 1, 
-            title: 'Súp bào ngư hải sâm (1 phần)',
-            img: './assets/img/products/sup-bao-ngu-hai-sam.jpeg',
-            category: 'Món mặn',
-            price: 540000,
-            desc: 'Súp bào ngư Bếp Hoa có bào ngư kết hợp cùng sò điệp, tôm tươi... được hầm trong nhiều giờ với rau củ & nấm đông trùng tạo ra vị ngọt tự nhiên hiếm thấy. Một món ăn khiến cả người ốm cũng thấy ngon miệng đó ạ.'
+            status: 1,
+            title: 'Pizza Hải Sản Tổng Hợp',
+            img: './assets/img/products/haisan1.png',
+            category: 'Pizza hải sản',
+            price: 250000,
+            desc: 'Tôm, mực, ghẹ, sò điệp hòa quyện cùng phô mai béo ngậy, đậm đà hương vị biển.'
         },
 
         {
             id: 7,
-            status: 1, 
-            title: 'Tai cuộn lưỡi',
-            category: 'Món mặn',
-            img: './assets/img/products/tai-cuon-luoi.jpeg',
-            price: 340000,
-            desc: 'Tai heo được cuộn bên trong cùng phần thịt lưỡi heo. Phần tai bên ngoài giòn dai, phần thịt lưỡi bên trong vẫn mềm, có độ ngọt tự nhiên của thịt. Tai cuộn lưỡi được chấm với nước mắm và tiêu đen.'
+            status: 1,
+            title: 'Pizza Tôm Mayo',
+            category: 'Pizza hải sản',
+            img: './assets/img/products/haisan2.png',
+            price: 220000,
+            desc: 'Tôm tươi nướng giòn rụm, phủ sốt mayonnaise béo ngậy, thơm ngon khó cưỡng.'
         },
 
         {
             id: 8,
-            status: 1, 
-            title: 'Xíu mại tôm thịt 10 viên',
-            img: './assets/img/products/xiu_mai_tom_thit_10_vien.jpg',
-            category: 'Món mặn',
-            price: 140000,
-            desc: 'Quý khách hấp chín trước khi ăn. Những miếng há cảo, sủi cảo, hoành thánh với phần nhân tôm, sò điệp, hải sản tươi ngon hay nhân thịt heo thơm ngậy chắc chắn sẽ khiến bất kỳ ai thưởng thức đều cảm thấy rất ngon miệng.'
+            status: 1,
+            title: 'Pizza Cá Ngừ Địa Trung Hải',
+            img: './assets/img/products/haisan4.png',
+            category: 'Pizza hải sản',
+            price: 240000,
+            desc: 'Cá ngừ, cà chua, hành tây, ô liu đen mang đậm phong vị Địa Trung Hải.'
         },
 
         {
             id: 9,
-            status: 1, 
-            title: 'Trà phô mai kem sữa',
-            category: "Nước uống",
-            img: './assets/img/products/tra-pho-mai-kem-sua.jpg',
-            price: 34000,
-            desc: 'Món Nước uống vừa béo ngậy, chua ngọt đủ cả mà vẫn có vị thanh của trà.',
+            status: 1,
+            title: 'Pizza Sò Điệp Bơ Tỏi',
+            category: "Pizza hải sản",
+            img: './assets/img/products/haisan3.png',
+            price: 25000,
+            desc: 'Sò điệp béo ngậy, kết hợp với sốt bơ tỏi thơm lừng, đậm chất hải sản cao cấp.',
         },
         {
             id: 10,
-            status: 1, 
-            title: 'Trà đào chanh sả',
-            category: "Nước uống",
-            img: './assets/img/products/tra-dao-chanh-sa.jpg',
-            price: 25000,
-            desc: 'Trà đào chanh sả có vị đậm ngọt thanh của đào, vị chua chua dịu nhẹ của chanh và hương thơm của sả.',
+            status: 1,
+            title: 'Pizza Cá Hồi Sốt Kem',
+            category: "Pizza hải sản",
+            img: './assets/img/products/haisan5.png',
+            price: 23000,
+            desc: 'Cá hồi tươi ngon, sốt kem béo ngậy, kết hợp với phô mai tan chảy, tạo nên một món pizza hấp dẫn.',
         },
         {
             id: 11,
-            status: 1, 
-            title: 'Bánh chuối nướng',
-            category: 'Món tráng miệng',
-            img: './assets/img/products/banh-chuoi-nuong.jpeg',
-            price: 60000,
-            desc: 'Bánh chuối nướng béo ngậy mùi nước cốt dừa cùng miếng chuối mềm ngon sẽ là Món tráng miệng phù hợp với mọi người.'
+            status: 1,
+            title: 'Pizza Tôm Hùm Mini',
+            category: 'Pizza hải sản',
+            img: './assets/img/products/haisan6.png',
+            price: 320000,
+            desc: 'Pizza Tôm Hùm Mini với lớp phô mai béo ngậy, tôm hùm tươi ngon, chắc chắn sẽ làm hài lòng những tín đồ hải sản.'
         },
         {
             id: 12,
-            status: 1, 
-            title: 'Há cảo sò điệp (10 viên)',
-            img: './assets/img/products/ha_cao.jpg',
-            category: 'Món mặn',
-            price: 140000,
-            desc: 'Những miếng há cảo, sủi cảo, hoành thánh với phần nhân tôm, sò điệp, hải sản tươi ngon hay nhân thịt heo thơm ngậy chắc chắn sẽ khiến bất kỳ ai thưởng thức đều cảm thấy rất ngon miệng.'
+            status: 1,
+            title: 'Pizza Ghẹ Xanh Phô Mai',
+            img: './assets/img/products/haisan7.png',
+            category: 'Pizza hải sản',
+            price: 270000,
+            desc: 'Những miếng ghẹ xanh tươi ngon, kết hợp với phô mai béo ngậy, tạo nên một món pizza hấp dẫn và đầy lôi cuốn.'
         },
         {
             id: 13,
-            status: 1, 
-            title: 'Chả rươi (100gr)',
-            img: './assets/img/products/thit_nuong.jpg',
-            category: 'Món mặn',
-            price: 60000,
-            desc: 'Chả rươi luôn mang đến hương vị khác biệt và "gây thương nhớ" hơn hẳn so với các loại chả khác. Rươi béo càng ăn càng thấy ngậy. Thịt thơm quyện mùi thì là và vỏ quýt rất đặc sắc. Chắc chắn sẽ là một món ăn rất hao cơm'
+            status: 1,
+            title: 'Pizza Mực Nướng Phô Mai',
+            img: './assets/img/products/haisan8.png',
+            category: 'Pizza hải sản',
+            price: 230000,
+            desc: 'Mực nướng thơm lừng, kết hợp với phô mai béo ngậy, tạo nên một món pizza hấp dẫn và đầy lôi cuốn.'
         },
         {
             id: 14,
-            status: 1, 
-            title: 'Nộm gà Hội An (1 phần)',
-            img: './assets/img/products/nom_ga_hoi_an.png',
-            category: 'Món mặn',
-            price: 60000,
-            desc: 'Nộm gà làm từ thịt gà ri thả đồi. Thịt gà ngọt, săn được nêm nếm vừa miệng, bóp thấu với các loại rau tạo thành món nộm thơm ngon, đậm đà, giải ngán hiệu quả.'
+            status: 1,
+            title: 'Pizza Hải Sản Phong Cách Nhật',
+            img: './assets/img/products/haisan9.png',
+            category: 'Pizza hải sản',
+            price: 260000,
+            desc: 'Hải sản tươi, rong biển, sốt teriyaki Nhật, kết hợp phô mai tan chảy.'
         },
         {
             id: 15,
-            status: 1, 
-            title: 'Set bún cá (1 set 5 bát)',
-            img: './assets/img/products/set_bun_ca.jpg',
-            category: 'Món mặn',
-            price: 60000,
-            desc: 'Bún cá được làm đặc biệt hơn với cá trắm lọc xương và chiên giòn, miếng cá nhúng vào nước dùng ăn vẫn giòn dai, thơm ngon vô cùng.'
+            status: 1,
+            title: 'Pizza trứng cá tuyết',
+            img: './assets/img/products/haisan10.png',
+            category: 'Pizza hải sản',
+            price: 160000,
+            desc: 'Hải sản tươi kết hợp sốt cà chua nhà làm, thanh nhẹ, tự nhiên.'
         },
         {
             id: 16,
-            status: 1, 
-            title: 'Bún cá (1 phần)',
+            status: 1,
+            title: 'Trà Chanh Mật Ong (1 ly)',
             img: './assets/img/products/set_bun_ca.jpg',
             category: 'Món mặn',
             price: 60000,
@@ -150,7 +151,7 @@ function createProduct() {
         },
         {
             id: 17,
-            status: 1, 
+            status: 1,
             title: 'Xôi trắng hành phi (1 phần)',
             img: './assets/img/products/bun_ca_hanh_phi.jpeg',
             category: 'Món mặn',
@@ -159,7 +160,7 @@ function createProduct() {
         },
         {
             id: 18,
-            status: 1, 
+            status: 1,
             title: 'Tôm sú lột rang thịt (1 phần)',
             img: './assets/img/products/tom_su_luot_ran_thit.png',
             category: 'Món mặn',
@@ -168,7 +169,7 @@ function createProduct() {
         },
         {
             id: 19,
-            status: 1, 
+            status: 1,
             title: 'Bánh cookie dừa',
             img: './assets/img/products/banh_cookie_dua.jpeg',
             category: 'Món mặn',
@@ -177,7 +178,7 @@ function createProduct() {
         },
         {
             id: 20,
-            status: 1, 
+            status: 1,
             title: 'Cá chiên giòn sốt mắm Thái',
             img: './assets/img/products/sot_mam_thai.jpeg',
             category: 'Món mặn',
@@ -186,7 +187,7 @@ function createProduct() {
         },
         {
             id: 21,
-            status: 1, 
+            status: 1,
             title: 'Tôm sú rang muối (1 suất)',
             category: 'Món mặn',
             img: './assets/img/products/tom-su-rang-muoi.jpeg',
@@ -195,7 +196,7 @@ function createProduct() {
         },
         {
             id: 22,
-            status: 1, 
+            status: 1,
             title: 'Tôm sú rang bơ tỏi (1 suất)',
             category: 'Món mặn',
             img: './assets/img/products/tom-su-rang-bo-toi.jpeg',
@@ -205,7 +206,7 @@ function createProduct() {
 
         {
             id: 23,
-            status: 1, 
+            status: 1,
             title: 'Combo Vịt quay và gỏi vịt',
             category: 'Món mặn',
             img: './assets/img/products/combo-vitquay-va-goivit.jpeg',
@@ -215,7 +216,7 @@ function createProduct() {
 
         {
             id: 24,
-            status: 1, 
+            status: 1,
             title: 'Set cá cơm tầm',
             img: './assets/img/products/set_ca_tam.jpg',
             category: 'Món mặn',
@@ -224,7 +225,7 @@ function createProduct() {
         },
         {
             id: 25,
-            status: 1, 
+            status: 1,
             title: 'Chả ốc 1 phần',
             img: './assets/img/products/cha_oc_1_phan.jpeg',
             category: 'Món mặn',
@@ -234,7 +235,7 @@ function createProduct() {
 
         {
             id: 26,
-            status: 1, 
+            status: 1,
             title: 'Gà ủ muối thảo mộc (1 con)',
             category: 'Món mặn',
             img: './assets/img/products/ga-u-muoi-thao-moc.png',
@@ -244,7 +245,7 @@ function createProduct() {
 
         {
             id: 27,
-            status: 1, 
+            status: 1,
             title: 'Gà không lối thoát (1 con)',
             category: 'Món mặn',
             img: './assets/img/products/ga-khong-loi-thoat.png',
@@ -254,7 +255,7 @@ function createProduct() {
 
         {
             id: 28,
-            status: 1, 
+            status: 1,
             title: 'Cá chiên giòn mắm Thái (1 con)',
             category: 'Món mặn',
             img: './assets/img/products/ca-chien-gion-mam-thai.jpeg',
@@ -264,7 +265,7 @@ function createProduct() {
 
         {
             id: 29,
-            status: 1, 
+            status: 1,
             title: 'Chân giò chiên giòn mắm Thái',
             category: 'Món mặn',
             img: './assets/img/products/chan-gio-chien-gion-mam-thai.jpeg',
@@ -274,7 +275,7 @@ function createProduct() {
 
         {
             id: 30,
-            status: 1, 
+            status: 1,
             title: 'Chả cốm (500gr)',
             category: 'Món mặn',
             img: './assets/img/products/cha-com.png',
@@ -284,7 +285,7 @@ function createProduct() {
 
         {
             id: 31,
-            status: 1, 
+            status: 1,
             title: 'Vịt om sấu (1 hộp)',
             category: 'Món mặn',
             img: './assets/img/products/vit-om-sau.jpeg',
@@ -294,7 +295,7 @@ function createProduct() {
 
         {
             id: 32,
-            status: 1, 
+            status: 1,
             title: 'Giò xào (1kg)',
             category: 'Món mặn',
             img: './assets/img/products/gio-xao.jpeg',
@@ -304,7 +305,7 @@ function createProduct() {
 
         {
             id: 33,
-            status: 1, 
+            status: 1,
             title: 'Nem tai (1 hộp)',
             category: 'Món mặn',
             img: './assets/img/products/nem-tai.jpeg',
@@ -314,7 +315,7 @@ function createProduct() {
 
         {
             id: 34,
-            status: 1, 
+            status: 1,
             title: 'Canh dưa bò hầm (1 hộp)',
             category: 'Món mặn',
             img: './assets/img/products/canh-dua-bo-ham.jpeg',
@@ -324,7 +325,7 @@ function createProduct() {
 
         {
             id: 35,
-            status: 1, 
+            status: 1,
             title: 'Nạc nọng heo nướng kèm xôi trắng (500gr)',
             category: 'Món mặn',
             img: './assets/img/products/nac-nong-heo-nuong-kem-xoi-trang.jpeg',
@@ -334,7 +335,7 @@ function createProduct() {
 
         {
             id: 36,
-            status: 1, 
+            status: 1,
             title: 'Thịt quay (400gr)',
             category: 'Món mặn',
             img: './assets/img/products/thit-quay.jpeg',
@@ -344,7 +345,7 @@ function createProduct() {
 
         {
             id: 37,
-            status: 1, 
+            status: 1,
             title: 'Khâu nhục',
             category: 'Món mặn',
             img: './assets/img/products/khau-nhuc.jpeg',
@@ -353,7 +354,7 @@ function createProduct() {
         },
         {
             id: 38,
-            status: 1, 
+            status: 1,
             title: 'Xíu mại tôm thịt ( 10 viên)',
             category: 'Món mặn',
             img: './assets/img/products/ha_cao_tom_thit.jpg',
@@ -362,7 +363,7 @@ function createProduct() {
         },
         {
             id: 39,
-            status: 1, 
+            status: 1,
             title: 'Chè hương cốm lá dứa',
             category: 'Món tráng miệng',
             img: './assets/img/products/che-com-la-dua.jpeg',
@@ -372,7 +373,7 @@ function createProduct() {
 
         {
             id: 40,
-            status: 1, 
+            status: 1,
             title: 'Bánh bông lan chanh dây',
             category: 'Món tráng miệng',
             img: './assets/img/products/banh-bong-lan-chanh-day.jpeg',
@@ -382,183 +383,93 @@ function createProduct() {
 
         {
             id: 41,
-            status: 1, 
-            title: 'Chè bưởi',
-            category: 'Món tráng miệng',
-            img: './assets/img/products/che-buoi.jpeg',
-            price: 50000,
-            desc: 'Chè bưởi rất dễ ăn bởi hương vị ngọt mát, thơm ngon, vị bùi bùi của đậu xanh, giòn sần sật của cùi bưởi mà không hề bị đắng'
+            status: 1,
+            title: 'Trà Chanh Mật Ong',
+            category: 'Nước uống',
+            img: './assets/img/products/drink1.png',
+            price: 35000,
+            desc: 'Trà xanh thanh mát, kết hợp mật ong và chanh tươi, giải nhiệt tự nhiên.'
         },
         {
             id: 42,
-            status: 1, 
-            title: 'Set lẩu Thái tomyum',
-            category: "Món lẩu",
-            img: './assets/img/products/lau-thai-tomyum.jpeg',
-            price: 699000,
-            desc: 'Lẩu Thái là món ăn xuất phát từ món canh chua Tom yum nổi tiếng của Thái Lan. Nước lẩu có hương vị chua chua cay cay đặc trưng. Các món nhúng lẩu gồn thịt bò, hải sản, rau xanh và các loại nấm.',
+            status: 1,
+            title: 'Nước Cam Ép Tươi',
+            category: 'Nước uống',
+            img: './assets/img/products/drink2.png',
+            price: 40000,
+            desc: 'Cam tươi vắt nguyên chất, giàu vitamin C, vị ngọt dịu tự nhiên.'
         },
         {
             id: 43,
-            status: 1, 
-            title: 'Set lẩu Thái nấm chay',
-            category: "Món lẩu",
-            img: './assets/img/products/lau-thai-nam-chay.png',
-            price: 550000,
-            desc: 'Một set lẩu Thái nấm chay với nước dùng 100% từ rau củ quả tự nhiên, thêm sả cây tươi, riềng miếng, ớt, nước dừa để lên được vị nước lẩu Thái chuẩn vị. Đồ nhúng đa dạng với nhiều loại nấm khác nhau, rau tươi giòn, đậu phụ mềm xốp, váng đậu amla chiên giòn. Kèm bún tươi ăn rất hợp.',
+            status: 1,
+            title: 'Sinh Tố Bơ Sữa',
+            category: 'Nước uống',
+            img: './assets/img/products/drink3.png',
+            price: 50000,
+            desc: 'Bơ chín dầm cùng sữa đặc và đá xay, béo mịn, thơm ngon.'
         },
         {
             id: 44,
-            status: 1, 
-            title: 'Đậu hũ xào nấm chay',
-            category: "Món chay",
-            img: './assets/img/products/dau-hu-xao-nam-chay.png',
-            price: 220000,
-            desc: 'Món xào thanh nhẹ ngọt lịm từ rau củ và nấm tươi, thêm chút đậu phụ chiên thái miếng, nêm nếm đậm đà. Ăn kèm cơm trắng hay làm bún trộn rau củ cũng rất hợp.',
+            status: 1,
+            title: 'Soda Chanh Dây',
+            category: 'Nước uống',
+            img: './assets/img/products/drink4.png',
+            price: 45000,
+            desc: 'Nước soda kết hợp chanh dây tươi, chua ngọt sảng khoái.'
         },
         {
             id: 45,
-            status: 1, 
-            title: 'Bún trộn chay (1 suất)',
-            category: "Món chay",
-            img: './assets/img/products/bun-tron-chay.png',
-            price: 75000,
-            desc: 'Bún trộn chay tưởng là quen mà ăn ngon lạ miệng. Với bún tươi được trộn với nước tương và sốt ớt đặc biệt, mắm chay thơm, thêm rau củ tươi, rau thơm bắt vị, nấm xào săn, đậu phụ thái lát, một món thanh nhẹ thích hợp ăn trưa hoặc để dành cho anh chị eat-clean bữa tối.',
+            status: 1,
+            title: 'Trà Đào Cam Sả',
+            category: 'Nước uống',
+            img: './assets/img/products/drink5.png',
+            price: 48000,
+            desc: 'Trà đen hương đào, cam tươi và sả thơm, mát lạnh đầy năng lượng.'
         },
         {
             id: 46,
-            status: 1, 
-            title: 'Bún riêu chay (1 suất)',
-            category: "Món chay",
-            img: './assets/img/products/bun-rieu-chay.png',
-            price: 75000,
-            desc: 'Bún riêu chay với phần gạch cua chay từ đậu phụ non mềm đánh với sốt màu thơm ngon. Nước dùng thanh nhẹ từ rau củ quả, được nấu lên vị đậm đà rất ngon miệng. Một phần bún riêu kèm với gạch cua là giò chay, đậu phụ rán, rau sống ngọt giòn và tương ớt chay sánh ngon.',
+            status: 1,
+            title: 'Cà Phê Sữa Đá',
+            category: 'Nước uống',
+            img: './assets/img/products/drink6.png',
+            price: 30000,
+            desc: 'Cà phê rang xay đậm đà, pha cùng sữa đặc, hương vị quen thuộc.'
         },
         {
             id: 47,
-            status: 1, 
-            title: 'Miến xào rau củ chay',
-            category: "Món chay",
-            img: './assets/img/products/mien-xao-rau-cu-chay.png',
-            price: 170000,
-            desc: 'Sợi miến khoai lang bếp ngâm cho mềm, xào kèm rau củ quả tươi theo mùa, nêm cùng nước tương và dầu mè, một món xào chay vừa mát lành lại thơm ngon.',
+            status: 1,
+            title: 'Nước Dừa Xiêm',
+            category: 'Nước uống',
+            img: './assets/img/products/drink7.png',
+            price: 35000,
+            desc: 'Dừa xiêm tươi mát, ngọt thanh, giữ nguyên hương vị tự nhiên.'
         },
         {
             id: 48,
-            status: 1, 
-            title: 'Cuốn nấm chay (10 cuốn)',
-            category: "Món chay",
-            img: './assets/img/products/cuon-nam-chay.png',
-            price: 120000,
-            desc: 'Nấm tươi làm chín cuộn với bánh phở và rau bào, thêm đậu phụ chiên giòn thái chân hương đưa vị, chấm mắm chua ngọt chay bếp trưởng pha chế, một món ngon làm món khai vị rất hợp.',
+            status: 1,
+            title: 'Trà Sữa Trân Châu Đường Đen',
+            category: 'Nước uống',
+            img: './assets/img/products/drink8.png',
+            price: 45000,
+            desc: 'Trà sữa béo ngậy kết hợp trân châu dẻo dai, đường đen thơm lừng.'
         },
         {
             id: 49,
-            status: 1, 
-            title: 'Xôi xéo',
-            category: "Món chay",
-            img: './assets/img/products/xoi-xeo.png',
-            price: 80000,
-            desc: 'Xôi xéo đậu xanh bếp dùng nếp cái hoa vàng hạt mẩy, ngâm với nước nghệ và đồ 2 lần cho hạt nếp chín mềm và thơm, đậu xanh sên mịn cắt tơi trộn cùng xôi, khi ăn rắc hành phi đưa vị, rất hấp dẫn.',
+            status: 1,
+            title: 'Sinh Tố Dâu Tây',
+            category: 'Nước uống',
+            img: './assets/img/products/drink9.png',
+            price: 50000,
+            desc: 'Dâu tươi xay cùng sữa chua, vị chua ngọt hài hòa, màu sắc hấp dẫn.'
         },
         {
             id: 50,
-            status: 1, 
-            title: 'Chả quế chay',
-            category: "Món chay",
-            img: './assets/img/products/cha-que-chay.png',
-            price: 70000,
-            desc: '',
-        },
-        {
-            id: 51,
-            status: 1, 
-            title: 'Nem chay',
-            category: "Món chay",
-            img: './assets/img/products/nem-chay.png',
-            price: 160000,
-            desc: 'Nem chay thơm ngon, thanh thuần bếp trưởng sử dụng rau củ bào tươi, đậu xanh, khoai môn, miến, mộc nhĩ và nấm hương, tất cả xào thơm cho lên vị, sau đó cuộn với bánh đa nem mỏng, chiên giòn vỏ, chấm mắm chua ngọt chay ăn kèm rau thơm rất hấp dẫn.',
-        },
-        {
-            id: 52,
-            status: 1, 
-            title: 'Bánh tráng trộn',
-            category: "Món ăn vặt",
-            img: './assets/img/products/banh-trang-tron.jpg',
-            price: 20000,
-            desc: 'Bánh tráng trộn là món ăn ngon không chỉ nổi danh đất Sài Thành mà ngay khi xuất hiện tại Hà Nội, nó cũng đã trở thành món ăn “hot trend” rất được giới trẻ yêu thích. ',
-        },
-        {
-            id: 53,
-            status: 1, 
-            title: 'Bánh tráng nướng',
-            category: "Món ăn vặt",
-            img: './assets/img/products/banh-trang-nuong.jpg',
-            price: 10000,
-            desc: 'Khác với món bánh tráng trộn, bánh tráng nướng được phết một lớp trứng chút lên bề mặt bánh tráng cùng thịt băm, mỡ hành, nướng đến khi có màu vàng ruộm. ',
-        },
-        {
-            id: 54,
-            status: 1, 
-            title: 'Ốc thập cẩm (1 suất)',
-            category: "Món ăn vặt",
-            img: './assets/img/products/oc-thap-cam.jpg',
-            price: 50000,
-            desc: 'Được chế biến đủ các món ốc ngon khác nhau, như: ốc hấp, ốc luộc, ốc xào, ốc bỏ lò,.. với đủ các gia vị như tỏi, hành, ớt, tiêu, rau răm,…',
-        },
-        {
-            id: 55,
-            status: 1, 
-            title: 'Cơm cháy chà bông',
-            category: "Món ăn vặt",
-            img: './assets/img/products/com-chay-cha-bong.jpg',
-            price: 60000,
-            desc: 'Cơm cháy chà bông có thể bảo quản cả tháng mà ăn vẫn ngon và đóng gói rất tiện.',
-        },
-        {
-            id: 56,
-            status: 1, 
-            title: 'Phá lấu (1 suất)',
-            category: "Món ăn vặt",
-            img: './assets/img/products/pha-lau.jpg',
-            price: 99000,
-            desc: 'Cứ mỗi lần hỏi “Ăn gì ở Sài Gòn ngon, rẻ ?” là người ta nhớ ngay món phá lấu.',
-        },
-        {
-            id: 57,
-            status: 1, 
-            title: 'Bột chiên (1 suất)',
-            category: "Món ăn vặt",
-            img: './assets/img/products/bot-chien.jpg',
-            price: 49000,
-            desc: 'Cùng với nước chấm đặc biệt, bột chiên để lại hương vị khó tả cho thực khách sau khi thưởng thức.',
-        },
-        {
-            id: 58,
-            status: 1, 
-            title: 'Gỏi khô bò (1 suất)',
-            category: "Món ăn vặt",
-            img: './assets/img/products/goi-bo-kho.jpg',
-            price: 60000,
-            desc: 'Thơm ngon đến từng sợi bò.',
-        },
-        {
-            id: 59,
-            status: 1, 
-            title: 'Hoành thánh tôm (10 viên)',
-            img: './assets/img/products/hoanh_thanh.jpg',
-            category: 'Món mặn',
-            price: 130000,
-            desc: 'Những miếng há cảo, sủi cảo, hoành thánh với phần nhân tôm, sò điệp, hải sản tươi ngon hay nhân thịt heo thơm ngậy chắc chắn sẽ khiến bất kỳ ai thưởng thức đều cảm thấy rất ngon miệng.'
-        },
-        {
-            id: 60,
-            status: 1, 
-            title: 'Nước ép dâu tây',
-            img: './assets/img/products/nuoc-ep-dau-tay.jpg',
+            status: 1,
+            title: 'Coca Cola',
             category: 'Nước uống',
-            price: 100000,
-            desc: 'Dâu tây ăn nguyên quả ngon ngọt, có cả quả dôn dốt chua, màu đỏ mọng trông cực yêu. Không chỉ ngon miệng mà đồ uống từ dâu tây còn có công dụng bảo vệ sức khỏe, sáng mắt, đẹp da, thon gọn vóc dáng. Làm giảm nguy cơ mắc bệnh về mỡ máu, chống viêm,…'
+            img: './assets/img/products/drink10.png',
+            price: 25000,
+            desc: 'Nước ngọt các loại - lon 330m'
         },
         ]
         localStorage.setItem('products', JSON.stringify(products));
