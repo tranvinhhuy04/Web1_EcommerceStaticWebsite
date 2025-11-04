@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link rel="icon" href="./assets/img/logo_hinh_red.svg" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style_aboutus.css" />
+    <link rel="stylesheet" href="assets/css/breakpoint.css" />
+
+    <title>Sunkissed | Nước uống dinh dưỡng</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+84)335993276</span>
+            <span></span>
+          </div>
+          <p class="header__alert-news">
+           Giảm 15% trên mọi đơn hàng từ 20-24/12
+          </p>
+          <a href="login-register.html" class="header__top-action">
+           Đăng nhập/ Đăng kí
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img class="nav__logo-img" src="assets/img/logo_red.svg" alt="website logo" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="./assets/img/logo_red.svg" alt="">
+            </a>
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Trang chủ</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Cửa hàng</a>
+            </li>
+            <li class="nav__item">
+              <a href="aboutus.html" class="nav__link active-link ">Về chúng tôi</a>
+            </li>
+            
+            <li class="nav__item">
+              <a href="lienhe.html" class="nav__link">Liên hệ</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">Tài khoản</a>
+            </li>
+          </ul>
+    
+          <!-- Hộp tìm kiếm -->
+          <div class="header__search">
+            <input type="text" placeholder="Tìm kiếm sản phẩm" class="form__input" />
+          </div>
+        </div>
+    
+          <!-- Wishlist và Giỏ hàng -->
+          <div class="header__user-actions">
+            <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+              <img src="assets/img/icon-heart.svg" alt="" />
+              <span class="count">3</span>
+            </a>
+            <a href="cart.html" class="header__action-btn" title="Cart">
+              <img src="assets/img/icon-cart.svg" alt="" />
+              <span class="count">3</span>
+            </a>
+            <div class="header__action-btn nav__toggle" id="nav-toggle">
+              <img src="./assets//img/menu-burger.svg" alt="">
+            </div>
+          </div>
+        </nav>
+    </header>
+     <!--=============== Thanh định vị vị trí trang ===============-->
+     <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Về chúng tôi</span></li>
+        </ul>
+      </section>
+       <!--=============== n/Thanh định vị vị trí trang ===============-->
+    
+    <!-- Nội dung bên trong nghi làm -->
+    <!--Giới thiệu sản phẩm Sunkissed-->
+    <section>
+      <div class="info_container">
+        <!-- Tiêu đề giới thiệu -->
+        <div class="tieude">
+          <div class="title hover-title">Hơn cả việc khoẻ mạnh</div>
+        </div>
+        <!--n/ Tiêu đề giới thiệu -->
+        <div class="content">
+          <!-- Nội dung bên trái -->
+          <div class="ben_trai">
+            <div class="thanh_phan">
+              <h3>Thành phần hữu cơ</h3>
+              <p class="hover-effect">Sự tươi mát thuần khiết với nước ép 100% hữu cơ, được làm từ những nguyên liệu tinh túy nhất của thiên nhiên, mang đến cho bạn nguồn năng lượng khỏe mạnh và thơm ngon.</p>
+            </div>
+            <div class="dong_goi">
+              <h3>Đóng gói bền vững</h3>
+              <p class="hover-effect">Sản phẩm của chúng tôi được thiết kế bằng các vật liệu thân thiện với môi trường, giúp giảm thiểu rác thải và hướng tới một tương lai xanh hơn.</p>
+            </div>
+          </div>
+          <!--n/ Nội dung bên trái -->
+    
+          <!-- Hình ảnh lon nước -->
+          <div class="lon_cam">
+            <img id="lonImage" src="assets/img/td_p1.png" alt="Sunkissed Latte Can">
+          </div>
+          <!--n/ Hình ảnh lon nước -->
+    
+          <!-- Nội dung bên phải -->
+          <div class="ben_phai">
+            <div class="tac_dong">
+              <h3>Tác động đến sức khoẻ</h3>
+              <p class="hover-effect">Khám phá hương vị tươi mát từ sản phẩm của chúng tôi, chứa đựng các thành phần tự nhiên giúp bạn duy trì lối sống lành mạnh hơn.</p>
+            </div>
+            <div class="social">
+              <h3>Kết nối với chúng tôi qua</h3>
+              <img src="assets/img/ig_icon.svg" alt="Instagram" class="social-icon">
+              <img src="assets/img/fb_icon.svg" alt="Facebook" class="social-icon">
+              <img src="assets/img/ytb_icon.svg" alt="YouTube" class="social-icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--n/ Nội dung bên phải -->
+    
+    <style>
+      .title {
+        font-size: 2.5em; /* Kích thước chữ mặc định */
+        transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển màu và phóng to */
+      }
+    
+      .hover-title:hover {
+        color: #ff6600; /* Màu sắc khi hover */
+        transform: scale(1.1); /* Phóng to chữ khi hover */
+      }
+    
+      h3 {
+        transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+      }
+    
+      h3:hover {
+        color: #ff6600; /* Màu sắc khi hover */
+      }
+    
+      .lon_cam img {
+        transition: transform 0.3s ease, filter 0.3s ease; /* Hiệu ứng chuyển đổi cho hình ảnh */
+      }
+    
+      .lon_cam img:hover {
+        transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+        filter: brightness(1.1); /* Tăng độ sáng hình ảnh khi hover */
+      }
+    
+      .hover-effect {
+        transition: color 0.3s ease; /* Hiệu ứng cho đoạn văn */
+      }
+    
+      .hover-effect:hover {
+        color: #ff6600; /* Chỉ đổi màu chữ khi hover */
+      }
+    
+      .social-icon {
+        transition: transform 0.3s ease; /* Hiệu ứng cho icon mạng xã hội */
+        width: 40px; /* Kích thước icon */
+        height: 40px; /* Kích thước icon */
+      }
+    
+      .social-icon:hover {
+        transform: scale(1.1); /* Phóng to icon khi hover */
+      }
+    </style>
+    
+    <script>
+      const images = [
+        'assets/img/td_p1.png', // Hình đầu tiên
+        'assets/img/td_p2.png', // Hình thứ hai
+        'assets/img/td_p3.png', // Hình thứ ba
+        'assets/img/td_p4.png'  // Hình thứ tư
+      ];
+    
+      let currentIndex = 0;
+    
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % images.length; // Cập nhật chỉ số
+        document.getElementById("lonImage").src = images[currentIndex]; // Thay đổi hình ảnh
+      }
+    
+      setInterval(changeImage, 2000); // Thay đổi hình ảnh mỗi 2000 ms (2 giây)
+    </script>
+    <!--n/ Giới thiệu sản phẩm Sunkissed-->
+    <!--Giới thiệu thành viên-->
+<section>
+  <!-- Tiêu đề giới thiệu thành viên -->
+  <div class="introduce_mem">
+    <h2>Thành Viên Của Chúng Tôi</h2>
+  </div>
+    <!--n/ Tiêu đề giới thiệu thành viên -->
+
+    <!-- Ba thành viên thứ nhất -->
+    <div class="tong_thanh_vien">
+      <div class="ba_thanh_vien_1">
+        <div id="le_khoi">
+          <img src="assets\img\Khoi.png" alt="Lê Khôi" class="profile-image">
+          <h3>Võ Xuân Lê Khôi</h3>
+        </div>
+        <div id="quoc_bao">
+          <img src="assets\img\Bao.png" alt="Quốc Bảo" class="profile-image">
+          <h3>Nguyễn Đình Quốc Bảo</h3>
+        </div>
+        <div id="huu_khai">
+          <img src="assets\img\Khai.png" alt="Hữu Khải" class="profile-image">
+          <h3>Nguyễn Hồ Hữu Khải</h3>
+        </div>
+      </div>
+      <!--n/ Ba thành viên thứ nhất -->
+
+      <!-- Ba thành viên thứ hai -->
+      <div class="ba_thanh_vien_2">
+        <div id="minh_nhat">
+          <img src="assets\img\Nhat.png" alt="Minh Nhật" class="profile-image">
+          <h3>Trần Minh Nhật</h3>
+        </div>
+        <div id="thanh_phat">
+          <img src="assets\img\Phat.png" alt="Thành Phát" class="profile-image">
+          <h3>Nguyễn La Thành Phát</h3>
+        </div>
+        <div id="vinh_nghi">
+          <img src="assets\img\Nghi.png" alt="Vinh Nghi" class="profile-image">
+          <h3>Nguyễn Vĩnh Nghi</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--n/ Ba thành viên thứ hai -->
+</section>
+<!--n/ Giới thiệu thành viên-->
+
+      <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer__container grid">
+          <div class="footer__content">
+            <a href="index.html" class="footer__logo">
+              <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
+            </a>
+            <h4 class="footer__subtitle">Liên hệ</h4>
+            <p class="footer__description">
+              <span>Địa chỉ:</span> 279 Nguyễn Tri Phương, Quận 10, Tp. Hồ Chí Minh
+            </p>
+            <p class="footer__description">
+              <span>Điện thoại:</span> +84 335993276
+            </p>
+            <p class="footer__description">
+              <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
+            </p>
+            <div class="footer__social">
+              <h4 class="footer__subtitle">Follow ngay</h4>
+              <div class="footer__links flex">
+                <a href="#">
+                  <img
+                    src="./assets/img/icon-facebook.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/img/icon-instagram.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/img/icon-youtube.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Thông tin</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+              <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
+              <li><a href="#" class="footer__link">Chính sách</a></li>
+              <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
+              <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
+              <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Tài khoản</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Đăng nhập</a></li>
+              <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+              <li><a href="#" class="footer__link">Wishlist</a></li>
+              <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
+              <li><a href="#" class="footer__link">Trợ giúp</a></li>
+              <li><a href="#" class="footer__link">Đơn hàng</a></li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
+            <img
+              src="./assets/img/thanhtoan.svg"
+              alt=""
+              class="payment__img"
+            />
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="copyright">&copy; 2024 Sunkissed. All right reserved</p>
+          <span class="designer">Thiết kế bởi Nhóm 5 Coop.</span>
+        </div>
+      </footer>
+      <script src="./assets/js/ct_main.js"></script>
+    </body>
+    
+    </html>

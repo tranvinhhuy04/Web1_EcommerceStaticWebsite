@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!--=============== FLATICON ===============-->
+        <link rel="icon" href="./assets/img/logo_hinh_red.svg" type="image/png">
+        <link
+          rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+        />
+    
+        <!--=============== SWIPER CSS ===============-->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style_checkout.css" />
+        <link rel="stylesheet" href="assets/css/breakpoint.css" />
+    
+        <title>Sunkissed | Nước uống dinh dưỡng</title>
+      </head>
+  <body>
+   <!--=============== HEADER ===============-->
+   <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>(+84)335993276</span>
+          <span></span>
+        </div>
+        <p class="header__alert-news">
+         Giảm 15% trên mọi đơn hàng từ 20-24/12
+        </p>
+        <a href="login-register.html" class="header__top-action">
+         Đăng nhập/ Đăng kí
+        </a>
+      </div>
+    </div>
+<!--=============== n/HEADER ===============-->
+<!-- Navigation -->
+<nav class="nav container">
+  <a href="index.html" class="nav__logo">
+    <img class="nav__logo-img" src="assets/img/logo_red.svg" alt="website logo" />
+  </a>
+  <div class="nav__menu" id="nav-menu">
+    <div class="nav__menu-top">
+      <a href="index.html" class="nav__menu-logo">
+        <img src="./assets/img/logo_red.svg" alt="">
+      </a>
+      <div class="nav__close" id="nav-close">
+        <i class="fi fi-rs-cross-small"></i>
+      </div>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link ">Trang chủ</a>
+      </li>
+      <li class="nav__item">
+        <a href="shop.html" class="nav__link">Cửa hàng</a>
+      </li>
+      <li class="nav__item">
+        <a href="aboutus.html" class="nav__link">Về chúng tôi</a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="lienhe.html" class="nav__link">Liên hệ</a>
+      </li>
+      <li class="nav__item">
+        <a href="accounts.html" class="nav__link">Tài khoản</a>
+      </li>
+    </ul>
+
+    <!-- Hộp tìm kiếm -->
+    <div class="header__search">
+      <input type="text" placeholder="Tìm kiếm sản phẩm" class="form__input" />
+    </div>
+  </div>
+
+    <!-- Wishlist và Giỏ hàng -->
+    <div class="header__user-actions">
+      <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+        <img src="assets/img/icon-heart.svg" alt="" />
+        <span class="count">3</span>
+      </a>
+      <a href="cart.html" class="header__action-btn" title="Cart">
+        <img src="assets/img/icon-cart.svg" alt="" />
+        <span class="count">3</span>
+      </a>
+      <div class="header__action-btn nav__toggle" id="nav-toggle">
+        <img src="./assets//img/menu-burger.svg" alt="">
+      </div>
+    </div>
+  </nav>
+  </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Giỏ hàng</span></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Thanh Toán</span></li>
+        </ul>
+      </section>
+
+    <!--=============== CHECKOUT ===============-->
+    
+    <section class="checkout section--lg">
+        <div class="checkout__container container grid">
+            <!--====== phản hồi khách hàng & áp dụng phiếu giảm giá ======-->
+            <div class="u-s-p-b-60">
+                <!--====== Section chính ======-->
+                                                                  <!-- PHẢN HỒI KHÁCH HÀNG -->
+
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row1">
+                            <div class="col-lg-12">
+                                <div id="checkout-msg-group">
+                                    <div class="msg u-s-m-b-30">
+    
+                                        <span class="msg__text">Phản hồi khách hàng?
+    
+                                            <a class="gl-link" href="#return-customer" data-toggle="collapse">Nhấn vào
+                                                đây để đăng nhập</a></span>
+                                        <div class="collapse" id="return-customer" data-parent="#checkout-msg-group">
+                                            <div class="l-f u-s-m-b-16">
+    
+                                                <span class="gl-text">Nếu bạn có tài khoản, vui lòng đăng
+                                                    nhập.</span>
+                                                <form class="l-f__form">
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+    
+                                                            <label class="gl-label" for="login-email">E-MAIL *</label>
+    
+                                                            <input class="input-text input-text--primary-style" type="text"
+                                                                id="login-email" placeholder="Nhập E-mail">
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+    
+                                                            <label class="gl-label" for="login-password">MẬT KHẨU
+                                                                *</label>
+    
+                                                            <input class="input-text input-text--primary-style" type="text"
+                                                                id="login-password" placeholder="Nhập Mật khẩu">
+                                                        </div>
+                                                    </div>
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+    
+                                                            <button class="btn" type="submit">ĐĂNG NHẬP</button>
+                                                        </div>
+    
+                                                    </div>
+                                                    <!--====== Check Box ======-->
+                                                    <div class="check-box">
+    
+                                                        <input type="checkbox" id="remember-me">
+                                                        <div class="check-box__state check-box__state--primary">
+    
+                                                            <label class="check-box__label" for="remember-me">Nhớ
+                                                                tôi</label>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Check Box ======-->
+                                                                        <!-- PHẢN HỒI KHÁCH HÀNG -->
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                               <!-- ÁP DỤNG PHIẾU GIẢM GIÁ -->
+
+                                    <div class="msg">
+                                        <span class="msg__text">Áp dụng phiếu giảm giá?
+    
+                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse">Bấm vào đây để
+                                                nhập mã của bạn</a></span>
+                                        <div class="collapse" id="have-coupon" data-parent="#checkout-msg-group">
+                                            <div class="c-f u-s-m-b-16">
+    
+                                                <span class="gl-text u-s-m-b-16">Nhập mã phiếu giảm giá của bạn (nếu
+                                                    có).</span>
+                                                <form class="c-f__form">
+                                                    <div class="u-s-m-b-16">
+                                                        <div class="u-s-m-b-15">
+    
+                                                            <label for="coupon"></label>
+    
+                                                            <input class="input-text input-text--primary-style" type="text"
+                                                                id="coupon" placeholder="Mã giảm giá">
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+    
+                                                            <button class="btn" type="submit">ÁP DỤNG</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                           <!-- ÁP DỤNG PHIẾU GIẢM GIÁ -->
+
+                <!--====== End - Section chính======-->
+            </div>
+            </div>
+            <!--====== End -phản hồi khách hàng & áp dụng phiếu giảm giá ======-->
+    
+    
+            <!-- KHU VỰC THANH TOÁN -->
+            <div class="checkout__group-wrapper">
+                <!-- ==== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="checkout-f">
+                            <div class="row2">
+                                <div class="col-lg-6">
+                                    <h1 class="checkout-f__h1">THÔNG TIN GIAO HÀNG</h1>
+                                    <form class="checkout-f__delivery">
+                                        <div class="u-s-m-b-30">
+                                            <div class="u-s-m-b-15">
+    
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+    
+                                                    <input type="checkbox" id="get-address">
+                                                    <div class="check-box__state check-box__state--primary">
+    
+                                                        <label class="check-box__label" for="get-address">Sử dụng địa
+                                                            chỉ giao hàng và thanh toán mặc định từ tài khoản</label>
+                                                    </div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+                                            </div>
+    
+                                            <!--====== First Name, Last Name ======-->
+                                            <div class="gl-inline">
+                                                <div class="u-s-m-b-15">
+    
+                                                    <label class="gl-label" for="billing-fname">Tên *</label>
+    
+                                                    <input class="input-text input-text--primary-style" type="text"
+                                                        id="billing-fname" data-bill="">
+                                                </div>
+                                                <div class="u-s-m-b-15">
+    
+                                                    <label class="gl-label" for="billing-lname">Họ *</label>
+    
+                                                    <input class="input-text input-text--primary-style" type="text"
+                                                        id="billing-lname" data-bill="">
+                                                </div>
+                                            </div>
+                                            <!--====== End - First Name, Last Name ======-->
+    
+    
+                                            <!--====== E-MAIL ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <label class="gl-label" for="billing-email">E-MAIL *</label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-email" data-bill="">
+                                            </div>
+                                            <!--====== End - E-MAIL ======-->
+    
+    
+                                            <!--====== SỐ ĐIỆN THOẠI ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <label class="gl-label" for="billing-phone">Số Điện Thoại *</label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-phone" data-bill="">
+                                            </div>
+                                            <!--====== END SỐ ĐIỆN THOẠI ======-->
+    
+    
+                                            <!--====== ĐỊA CHỈ ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <label class="gl-label" for="billing-street">Địa Chỉ *</label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-street" placeholder="Tên nhà và tên đường" data-bill="">
+                                            </div>
+                                            <div class="u-s-m-b-15">
+    
+                                                <label for="billing-street-optional"></label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-street-optional" placeholder="Tên căn hộ, chung cư"
+                                                    data-bill="">
+                                            </div>
+                                            <!--====== END ĐỊA CHỈ ======-->
+    
+    
+                                            <!--====== QUỐC GIA ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <!--====== Select Box ======-->
+    
+                                                <label class="gl-label" for="billing-country">Quốc Gia *</label><select
+                                                    class="select-box--primary-style" id="billing-country" data-bill="">
+                                                    <option selected value="">Choose Country</option>
+                                                    <option value="uae">Việt Nam</option>
+                                                    <option value="uk">Hoa Kỳ</option>
+                                                    <option value="us">Thụy Sĩ</option>
+                                                </select>
+                                                <!--====== End - Select Box ======-->
+                                            </div>
+                                            <!--====== END QUỐC GIA ======-->
+    
+    
+                                            <!--====== THỊ TRẤN / THÀNH PHỐ ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <label class="gl-label" for="billing-town-city">Thành Phố *</label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-town-city" data-bill="">
+                                            </div>
+                                            <!--====== END THỊ TRẤN / THÀNH PHỐ ======-->
+    
+    
+                                            <!--====== QUẬN ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <!--====== Select Box ======-->
+    
+                                                <label class="gl-label" for="billing-state">Quận *</label><select
+                                                    class="select-box select-box--primary-style" id="billing-state"
+                                                    data-bill="">
+                                                    <option selected value="">Choose State/Province</option>
+                                                    <option value="al">Quận 1</option>
+                                                    <option value="al">Quận 2</option>
+                                                    <option value="ny">Quận 3</option>
+                                                    <option value="al">Quận 4</option>
+                                                    <option value="al">Quận 5</option>
+                                                    <option value="ny">Quận 6</option>
+                                                    <option value="al">Quận 7</option>
+                                                    <option value="al">Quận 8</option>
+                                                    <option value="ny">Quận 10</option>
+                                                    <option value="al">Quận 11</option>
+                                                    <option value="al">Quận 12</option>
+                                                    <option value="al">Quận Tân Bình</option>
+                                                    <option value="al">Quận Tân Phú</option>
+                                                    <option value="al">Quận Gò Vấp</option>
+                                                    <option value="al">Quận Bình Chánh</option>
+                                                    <option value="ny">Thành Phố Thủ Đức</option>
+                                                </select>
+                                                <!--====== End - Select Box ======-->
+                                            </div>
+                                            <!--====== END QUẬN ======-->
+    
+    
+                                            <!--====== MÃ ZIP ======-->
+                                            <div class="u-s-m-b-15">
+    
+                                                <label class="gl-label" for="billing-zip">Mã Zip *</label>
+    
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="billing-zip" placeholder="Zip/Postal Code" data-bill="">
+                                            </div>
+                                            <!--====== END MÃ ZIP ======-->
+                                            <div class="u-s-m-b-10">
+    
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+    
+                                                    <input type="checkbox" id="make-default-address" data-bill="">
+                                                    <div class="check-box__state check-box__state--primary">
+    
+                                                        <label class="check-box__label" for="make-default-address">Xuất
+                                                            hoá đơn cho đơn hàng</label>
+                                                    </div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+                                            </div>
+        
+                                            <div class="u-s-m-b-10">
+    
+                                                <label class="gl-label" for="order-note">Ghi Chú</label><textarea
+                                                    class="text-area text-area--primary-style" id="order-note"></textarea>
+                                            </div>
+                                            <div>
+                                                <button class="btn" type="submit">LƯU</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h1 class="checkout-f__h1">XÁC NHẬN ĐƠN HÀNG</h1>
+    
+                                    <!--====== XÁC NHẬN ĐƠN HÀNG ======-->
+                                    <div class="o-summary">
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__item-wrap gl-scroll">
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+    
+                                                            <img class="u-img-fluid" src="assets/img/td_p5_bg.png" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+    
+                                                            <span class="o-card__name">
+    
+                                                                <a href="product-detail-variable.html">Tropical
+                                                                    Hương Kiwi</a></span>
+    
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+    
+                                                            <span class="o-card__price">35,000₫</span>
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+    
+                                                        <span class="input-counter__minus fas fa-minus">
+                                                        </span>
+    
+                                                        <input class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="1000">
+    
+                                                        <span class="input-counter__plus fas fa-plus">
+                                                        </span>
+                                                    </div>
+                                                    <!--====== End - Input Counter ======-->
+                                                    <td><a class="ship-b__edit">Xóa</a></td>
+                                                </div>
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+    
+                                                            <img class="u-img-fluid" src="assets/img/td_p6_bg.png" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+    
+                                                            <span class="o-card__name">
+    
+                                                                <a href="product-detail-variable.html">Tropical Hương
+                                                                    Táo</a></span>
+    
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+    
+                                                            <span class="o-card__price">35,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+    
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+    
+                                                        <input class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="1000">
+    
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                    </div>
+                                                    <!--====== End - Input Counter ======-->
+    
+                                                    <td><a class="ship-b__edit">Xóa</a></td>
+                                                </div>
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+    
+                                                            <img class="u-img-fluid" src="assets/img/td_p2_bg.png" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+    
+                                                            <span class="o-card__name">
+    
+                                                                <a href="product-detail-variable.html">Tropical Hương Dứa
+                                                                </a></span>
+    
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+    
+                                                            <span class="o-card__price">35,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+    
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+    
+                                                        <input class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="1000">
+    
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                    </div>
+                                                    <!--====== End - Input Counter ======-->
+    
+                                                    <td><a class="ship-b__edit">Xóa</a></td>
+                                                </div>
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+    
+                                                            <img class="u-img-fluid" src="assets/img/td_p4_bg.png" alt="">
+                                                        </div>
+                                                        <div class="o-card__info-wrap">
+    
+                                                            <span class="o-card__name">
+    
+                                                                <a href="product-detail-variable.html">Tropical Hương
+                                                                    Đào</a></span>
+    
+                                                            <span class="o-card__quantity">Số lượng x 1</span>
+    
+                                                            <span class="o-card__price">35,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+    
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+    
+                                                        <input class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="1000">
+    
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                    </div>
+                                                    <!--====== End - Input Counter ======-->
+    
+                                                    <td><a class="ship-b__edit">Xóa</a></td>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Form thanh toán và vận chuyển -->
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <h1 class="checkout-f__h1">THANH TOÁN VÀ VẬN CHUYỂN</h1>
+                                                <div class="ship-b">
+    
+                                                    <span class="ship-b__text">Giao đến:</span>
+                                                    <div class="ship-b__box u-s-m-b-10">
+                                                        <p class="ship-b__p">279 Đ. Nguyễn Tri Phương, Phường 5, Quận
+                                                            10, Thành phố Hồ Chí Minh</p>
+    
+                                                        <a class="ship-b__edit" data-modal="modal"
+                                                            data-modal-id="#edit-ship-address">Sửa</a>
+                                                    </div>
+                                                    <div class="ship-b__box">
+    
+                                                        <span class="ship-b__text">Thanh toán theo địa chỉ thanh toán
+                                                            mặc định</span>
+    
+                                                        <a class="ship-b__edit" data-modal="modal"
+                                                            data-modal-id="#edit-ship-address">Sửa</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc form thanh toán và vận chuyển -->
+                                        <!-- Modal Chỉnh Sửa Địa Chỉ -->
+                                        <div class="modal" id="edit-ship-address">
+                                            <div class="modal-content">
+                                                <h2>Địa Chỉ Giao Hàng</h2>
+                                                <form id="edit-address-form">
+                                                    <label for="edit-address">Địa Chỉ:</label>
+                                                    <input type="text" id="edit-address" name="edit-address"
+                                                        value="279 Đ. Nguyễn Tri Phương, Phường 5, Quận 10, Thành phố Hồ Chí Minh">
+                                                    <div style="text-align: right;">
+                                                        <button type="submit">Lưu</button>
+                                                        <button type="button" id="add-new-address">Thêm Địa Chỉ Mới</button>
+                                                        <button type="button" id="close-edit-modal">Đóng</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Modal Thêm Địa Chỉ Mới -->
+                                        <div class="modal" id="new-address-modal">
+                                            <div class="modal-content">
+                                                <h2>Thêm Địa Chỉ Giao Hàng Mới</h2>
+                                                <form id="new-address-form">
+                                                    <label for="first-name">Tên:</label>
+                                                    <input type="text" id="first-name" name="first-name"
+                                                        placeholder="First Name">
+                                                    <label for="last-name">Họ:</label>
+                                                    <input type="text" id="last-name" name="last-name"
+                                                        placeholder="Last Name">
+                                                    <label for="phone">Số Điện Thoại:</label>
+                                                    <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                                                    <label for="address">Địa Chỉ:</label>
+                                                    <input type="text" id="address" name="address"
+                                                        placeholder="House Name And Street">
+                                                    <label for="country">Quốc Gia:</label>
+                                                    <select id="country" name="country">
+                                                        <option>Chọn Quốc Gia</option>
+                                                    </select>
+                                                    <label for="district">Quận:</label>
+                                                    <select id="district" name="district">
+                                                        <option>Chọn Quận</option>
+                                                    </select>
+                                                    <label for="city">Thành Phố:</label>
+                                                    <input type="text" id="city" name="city" placeholder="City">
+                                                    <label for="zip">Mã ZIP:</label>
+                                                    <input type="text" id="zip" name="zip" placeholder="Zip/Postal Code">
+                                                    <div style="text-align: right;">
+                                                        <button type="submit">Lưu</button>
+                                                        <button type="button" id="close-new-address-modal">Trở Về</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+    
+                                      <!-- Thông tin xác nhận thanh toán và vận chuyển -->
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <table class="o-summary__table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>PHÍ VẬN CHUYỂN</td>
+                                                            <td>Miễn Phí</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>TỔNG TIỀN</td>
+                                                            <td>140,000₫</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                            <!-- Thông tin xác nhận thanh toán và vận chuyển -->
+                    <!-- Phương thức thanh toán -->
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <h1 class="checkout-f__h1">PHƯƠNG THỨC THANH TOÁN</h1>
+                                                <form class="checkout-f__payment">
+                                                    <div class="u-s-m-b-10">
+    
+                                                        <!--====== Radio Box ======-->
+                                                        <div class="radio-box">
+    
+                                                            <input type="radio" id="cash-on-delivery" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+    
+                                                                <label class="radio-box__label" for="cash-on-delivery">Thanh
+                                                                    toán khi giao hàng
+                                                                    (COD)</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--====== End - Radio Box ======-->
+    
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+    
+                                                        <!--====== Radio Box ======-->
+                                                        <div class="radio-box">
+    
+                                                            <input type="radio" id="direct-bank-transfer" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+    
+                                                                <label class="radio-box__label"
+                                                                    for="direct-bank-transfer">Chuyển khoản trực
+                                                                    tiếp</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--====== End - Radio Box ======-->
+    
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+    
+                                                        <!--====== Radio Box ======-->
+                                                        <div class="radio-box">
+    
+                                                            <input type="radio" id="pay-with-card" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+    
+                                                                <label class="radio-box__label" for="pay-with-card">Thanh
+                                                                    toán bằng thẻ tín dụng /
+                                                                    thẻ ghi nợ</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--====== End - Radio Box ======-->
+    
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+                                                        <!--====== Radio Box ======-->
+                                                        <div class="radio-box">
+                                                            <input type="radio" id="pay-with-qr" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+                                                                <label class="radio-box__label" for="pay-with-qr">Thanh toán
+                                                                    bằng QR</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--====== End - Radio Box ======-->
+    
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+                                                        <!--====== Radio Box ======-->
+                                                        <div class="radio-box">
+                                                            <input type="radio" id="pay-with-momo" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+                                                                <label class="radio-box__label" for="pay-with-momo">Thanh
+                                                                    toán bằng MOMO</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--====== End - Radio Box ======-->
+                                                    </div>
+                                            </div>
+                                            <div class="u-s-m-b-10">
+    
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+    
+                                                    <input type="checkbox" id="term-and-condition">
+                                                    <div class="check-box__state check-box__state--primary">
+    
+                                                        <label class="check-box__label" for="term-and-condition">Tôi đồng ý
+                                                            với</label>
+                                                    </div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+    
+                                                <a class="gl-link">Điều khoản dịch vụ.</a>
+                                            </div>
+                                            <div>
+                                                <button class="btn" type="submit">ĐẶT HÀNG</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--====== End - Order Summary ======-->
+                                <!--====== End - Section Content ======-->
+                            </div>
+                            <!--====== End - Section 3 ======-->
+                        </div>
+                        <!--====== End - App Content ======-->
+                    </div>
+            <!-- END KHU VỰC THANH TOÁN -->
+
+
+
+                    <!-- END CHECKOUT -->
+
+<!--====== SẢN PHẨM NÊN MUA KÈM ======-->
+
+<!-- Tiêu đề sản phẩm nên mua kèm -->
+<div class="section__intro u-s-m-b-46">
+    <div class="container">
+        <div class="row3" style="display: flex; justify-content: center; align-items: center;">
+            <div class="col-lg-12">
+                <div class="section__text-wrap" style="text-align: center;">
+                    <h1 class="section__heading u-c-secondary u-s-m-b-12">
+                        SẢN PHẨM <span class="highlight">NÊN MUA KÈM</span>
+                    </h1>
+                    <span class="section__span u-c-grey">THÔNG TIN SẢN PHẨM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Tiêu đề spnmkem -->
+
+<!--====== Phần nội dung SẢN PHẨM MUA KÈM ======-->
+<div class="content-section">
+    <div class="container">
+        <div class="carousel-container">
+            <div class="product-carousel owl-carousel" data-item="4">
+                <div class="product-item ">
+                    <div class="product-card hover-effect">
+                        <!-- Thẻ hình và link sản phẩm -->
+                        <div class="image-wrap">
+                            <a class="aspect aspect-square bg-grey display-block" href="details_HuongCam.html">
+                                <img class="product-img" src="assets/img/td_p1_bg.png" alt="">
+                            </a>
+                                                    <!-- Thẻ hình và link sản phẩm -->
+                            <!-- Tạo thẻ hiện lên 4 nút để chọn -->
+                            <div class="action-wrap">
+                                <ul class="action-list">
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                            data-placement="top" title="Xem"><i class="fas fa-search-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                            data-placement="top" title="Thêm vào giỏ hàng"><i
+                                                class="fas fa-plus-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Thêm vào Wishlist"><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Gửi tôi thông tin qua email"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                                                    <!-- Tạo thẻ hiện lên 4 nút để chọn -->
+
+                        <!-- Thẻ đánh giá và tên sp -->
+                        <div class="product-info">
+                            <span class="product-category">
+                                <a href="details_HuongCam.html">Xem đánh giá</a>
+                            </span>
+                            <span class="product-name">
+                                <a href="details_HuongCam.html">Tropical Hương Cam</a>
+                            </span>
+                        </div>
+                        <!-- KT Thẻ đánh giá và tên sp -->
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review">(9)</span>
+                        </div>
+                        <span class="price">35,000₫</span>
+                    </div>
+                </div>
+
+                <div class="product-item margin-bottom">
+                    <div class="product-card hover-effect">
+                        <div class="image-wrap">
+                            <a class="aspect aspect-square bg-grey display-block" href="">
+                                <img class="product-img" src="assets/img/td_p2_bg.png" alt="">
+                            </a>
+                            <div class="action-wrap">
+                                <ul class="action-list">
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                            data-placement="top" title="Quick View"><i
+                                                class="fas fa-search-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                            data-placement="top" title="Add to Cart"><i
+                                                class="fas fa-plus-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Email me When the price drops"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ đánh giá và tên sp -->
+                        <div class="product-info">
+                            <span class="product-category">
+                                <a href="">Xem đánh giá</a>
+                            </span>
+                            <span class="product-name">
+                                <a href="">Tropical Hương Dứa</a>
+                            </span>
+                        </div>
+                        <!-- KT Thẻ đánh giá và tên sp -->
+
+                        <div class="rating gl-rating-style">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review">(6)</span>
+                        </div>
+                        <span class="price">35,000₫</span>
+                    </div>
+                </div>
+
+                <div class="product-item margin-bottom">
+                    <div class="product-card hover-effect">
+                        <div class="image-wrap">
+                            <a class="aspect aspect-square bg-grey display-block" href="">
+                                <img class="product-img" src="assets\img\mi_p1_bg.png" alt="">
+                            </a>
+                            <div class="action-wrap">
+                                <ul class="action-list">
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                            data-placement="top" title="Quick View"><i
+                                                class="fas fa-search-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                            data-placement="top" title="Add to Cart"><i
+                                                class="fas fa-plus-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Email me When the price drops"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ đánh giá và tên sp -->
+                        <div class="product-info">
+                            <span class="product-category">
+                                <a href="">Xem đánh giá</a>
+                            </span>
+                            <span class="product-name">
+                                <a href="">Tropical Hương Dâu</a>
+                            </span>
+                        </div>
+                        <!-- KT Thẻ đánh giá và tên sp -->
+
+                        <div class="rating gl-rating-style">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review">(10)</span>
+                        </div>
+                        <span class="price">35,000₫</span>
+                    </div>
+                </div>
+
+                <div class="product-item margin-bottom">
+                    <div class="product-card hover-effect">
+                        <div class="image-wrap">
+                            <a class="aspect aspect-square bg-grey display-block" href="">
+                                <img class="product-img" src="assets\img\mi_p3_bg.png" alt="">
+                            </a>
+                            <div class="action-wrap">
+                                <ul class="action-list">
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip"
+                                            data-placement="top" title="Quick View"><i
+                                                class="fas fa-search-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip"
+                                            data-placement="top" title="Add to Cart"><i
+                                                class="fas fa-plus-circle"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="login-register.html" data-tooltip="tooltip" data-placement="top"
+                                            title="Email me When the price drops"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ đánh giá và tên sp -->
+                        <div class="product-info">
+                            <span class="product-category">
+                                <a href="">Xem đánh giá</a>
+                            </span>
+                            <span class="product-name">
+                                <a href="">Tropical Hương Chuối</a>
+                            </span>
+                        </div>
+                        <!-- KT Thẻ đánh giá và tên sp -->
+
+                        <div class="rating gl-rating-style">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review">(12)</span>
+                        </div>
+                        <span class="price">35,000₫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End nội dung spmuakem -->
+<!--====== End - SẢN PHẨM NÊN MUA KÈM ======-->
+</main>
+
+
+     <!--=============== FOOTER ===============-->
+     <footer class="footer container">
+        <div class="footer__container grid">
+          <div class="footer__content">
+            <a href="index.html" class="footer__logo">
+              <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
+            </a>
+            <h4 class="footer__subtitle">Liên hệ</h4>
+            <p class="footer__description">
+              <span>Địa chỉ:</span> 279 Nguyễn Tri Phương, Quận 10, Tp. Hồ Chí Minh
+            </p>
+            <p class="footer__description">
+              <span>Điện thoại:</span> +84 335993276
+            </p>
+            <p class="footer__description">
+              <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
+            </p>
+            <div class="footer__social">
+              <h4 class="footer__subtitle">Follow ngay</h4>
+              <div class="footer__links flex">
+                <a href="#">
+                  <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+                </a>
+                <a href="#">
+                  <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+                </a>
+                <a href="#">
+                  <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Thông tin</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+              <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
+              <li><a href="#" class="footer__link">Chính sách</a></li>
+              <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
+              <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
+              <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Tài khoản</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Đăng nhập</a></li>
+              <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+              <li><a href="#" class="footer__link">Wishlist</a></li>
+              <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
+              <li><a href="#" class="footer__link">Trợ giúp</a></li>
+              <li><a href="#" class="footer__link">Đơn hàng</a></li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
+            <img src="./assets/img/thanhtoan.svg" style="width: 250px;" alt="" class="payment__img" />
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="copyright">&copy; 2024 Sunkissed. All right reserved</p>
+          <span class="designer">Thiết kế bởi Nhóm 5 Coop.</span>
+        </div>
+      </footer>
+   <!--=============== n/FOOTER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/ct_main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/checkout.js"></script>
+  </body>
+</html>
