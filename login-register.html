@@ -1,331 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== Flaticon ===============-->
-    <link rel="icon" href="./assets/img/logo_hinh_red.svg" type="image/png">
-  
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--=============== Flaticon ===============-->
+  <link rel="icon" href="./assets/img/logo_hinh_red.svg" type="image/png">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles_login.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <title>Sunkissed | Nước uống dinh dưỡng</title>
-  </head>
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <script>
-// ==========================
-// XỬ LÝ ĐĂNG NHẬP
-// ==========================
-document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.querySelector(".login form");
-  const registerForm = document.querySelector(".register form");
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles_login.css" />
 
-  // --- Đăng nhập ---
-  loginForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const email = loginForm.querySelector('input[type="email"]').value.trim();
-    const password = loginForm.querySelector('input[type="password"]').value.trim();
+  <title>Sunkissed | Nước uống dinh dưỡng</title>
+</head>
 
-    if (email === "" || password === "") {
-      alert("Vui lòng nhập đầy đủ email và mật khẩu!");
-      return;
-    }
+<script>
+  // ==========================
+  // XỬ LÝ ĐĂNG NHẬP
+  // ==========================
+  document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector(".login form");
+    const registerForm = document.querySelector(".register form");
 
-    // 🔹 Kiểm tra email/mật khẩu mẫu
-    if (email === "khachhang@gmail.com" && password === "12345678") {
-      alert("Đăng nhập thành công!");
+    // --- Đăng nhập ---
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = loginForm.querySelector('input[type="email"]').value.trim();
+      const password = loginForm.querySelector('input[type="password"]').value.trim();
+
+      if (email === "" || password === "") {
+        alert("Vui lòng nhập đầy đủ email và mật khẩu!");
+        return;
+      }
+
+      // 🔹 Kiểm tra email/mật khẩu mẫu
+      if (email === "khachhang@gmail.com" && password === "12345678") {
+        alert("Đăng nhập thành công!");
+        window.location.href = "index.html";
+      }
+      if (email === "admin@gmail.com" && password === "12345678") {
+        alert("Đăng nhập thành công!");
+        window.location.href = "admin/index.html";
+      } else {
+        alert("Email hoặc mật khẩu không đúng!");
+      }
+    });
+
+    // --- Đăng ký ---
+    registerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const username = registerForm.querySelector('input[type="text"]').value.trim();
+      const email = registerForm.querySelector('input[type="email"]').value.trim();
+      const password = registerForm.querySelectorAll('input[type="password"]')[0].value.trim();
+      const confirm = registerForm.querySelectorAll('input[type="password"]')[1].value.trim();
+
+      if (!username || !email || !password || !confirm) {
+        alert("Vui lòng nhập đầy đủ thông tin đăng ký!");
+        return;
+      }
+
+      // Kiểm tra định dạng email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Email không hợp lệ!");
+        return;
+      }
+
+      // Kiểm tra độ dài mật khẩu
+      if (password.length < 6) {
+        alert("Mật khẩu phải có ít nhất 6 ký tự!");
+        return;
+      }
+
+      // Kiểm tra xác nhận mật khẩu
+      if (password !== confirm) {
+        alert("Xác nhận mật khẩu không khớp!");
+        return;
+      }
+
+      alert("Đăng ký thành công! Chuyển hướng về trang chủ...");
       window.location.href = "index.html";
-    } else {
-      alert("Email hoặc mật khẩu không đúng!");
-    }
+    });
   });
-
-  // --- Đăng ký ---
-  registerForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const username = registerForm.querySelector('input[type="text"]').value.trim();
-    const email = registerForm.querySelector('input[type="email"]').value.trim();
-    const password = registerForm.querySelectorAll('input[type="password"]')[0].value.trim();
-    const confirm = registerForm.querySelectorAll('input[type="password"]')[1].value.trim();
-
-    if (!username || !email || !password || !confirm) {
-      alert("Vui lòng nhập đầy đủ thông tin đăng ký!");
-      return;
-    }
-
-    // Kiểm tra định dạng email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert("Email không hợp lệ!");
-      return;
-    }
-
-    // Kiểm tra độ dài mật khẩu
-    if (password.length < 6) {
-      alert("Mật khẩu phải có ít nhất 6 ký tự!");
-      return;
-    }
-
-    // Kiểm tra xác nhận mật khẩu
-    if (password !== confirm) {
-      alert("Xác nhận mật khẩu không khớp!");
-      return;
-    }
-
-    alert("Đăng ký thành công! Chuyển hướng về trang chủ...");
-    window.location.href = "index.html";
-  });
-});
 </script>
 
-  <body>
-        <!--=============== HEADER ===============-->
-        <header class="header">
-          <div class="header__top">
-            <div class="header__container container">
-              <div class="header__contact">
-                <span>(+84) 123456789</span>
-                <span></span>
-              </div>
-              <p class="header__alert-news">
-               Giảm 15% trên mọi đơn hàng từ 20-24/12
-              </p>
-              <a href="login-register.html" class="header__top-action">
-               Chúc mừng Giáng Sinh!
-              </a>
-            </div>
-          </div>
-      <!--=============== n/HEADER ===============-->
-      <!-- Navigation -->
-      <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-          <img class="nav__logo-img" src="assets/img/logo_red.svg" alt="website logo" />
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>(+84) 123456789</span>
+          <span></span>
+        </div>
+        <p class="header__alert-news">
+          Giảm 15% trên mọi đơn hàng từ 20-24/12
+        </p>
+        <a href="login-register.html" class="header__top-action">
+          Chúc mừng Giáng Sinh!
         </a>
-        <div class="nav__menu" id="nav-menu">
-          <div class="nav__menu-top">
-            <a href="index.html" class="nav__menu-logo">
-              <img src="./assets/img/logo_red.svg" alt="">
-            </a>
-            <div class="nav__close" id="nav-close">
-              <i class="fi fi-rs-cross-small"></i>
-            </div>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Trang chủ</a>
-            </li>
-            <li class="nav__item">
-              <a href="shop.html" class="nav__link">Cửa hàng</a>
-            </li>
-            <li class="nav__item">
-              <a href="aboutus.html" class="nav__link">Về chúng tôi</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Liên hệ</a>
-            </li>
-          </ul>
-    
-          <!-- Hộp tìm kiếm -->
-          <div class="header__search">
-            <input type="text" placeholder="Tìm kiếm sản phẩm" class="form__input" />
-          </div>
-        </div>
-    
-          <!-- Wishlist và Giỏ hàng -->
-          <div class="header__user-actions">
-            <a href="wishlist.html" class="header__action-btn" title="Wishlist">
-              <img src="assets/img/icon-heart.svg" alt="" />
-              <span class="count">3</span>
-            </a>
-            <a href="cart.html" class="header__action-btn" title="Cart">
-              <img src="assets/img/icon-cart.svg" alt="" />
-              <span class="count">3</span>
-            </a>
-            <div class="header__action-btn nav__toggle" id="nav-toggle">
-              <img src="./assets//img/menu-burger.svg" alt="">
-            </div>
-          </div>
-        </nav>
-        </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
-        <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
-          <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Đăng nhập / Đăng ký</span></li>
-        </ul>
-      </section>
-
-    <!-- Tiêu đề Merry Christmas --> 
-     <div class="christmas-title-container"> 
-      <h1 class="christmas-title">
-         Merry Christmas! 
-      </h1> 
+      </div>
     </div>
-    <!--n/ Tiêu đề Merry Christmas --> 
-
-      <!--=============== ĐĂNG NHẬP-ĐĂNG KÝ ===============-->
-      <section class="login-register section--lg">
-        <div class="login-register__container container grid">
-          <!--========== Mục đăng nhập ==========-->
-          <div class="login">
-            <h3 class="section__title">Đăng nhập</h3>
-            <form class="form grid">
-              <input
-                type="email"
-                placeholder="Email của bạn"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Mật khẩu của bạn"
-                class="form__input"
-              />
-                <!--======== Nút đăng nhập ========-->
-              <div class="form__btn">
-                <button class="btn">Đăng nhập</button>
-                <!--n/======== Nút đăng nhập ========-->
-                <!--======== Quên mật khẩu ========--> 
-                <div class="form__forgot-password"> 
-                  <a href="#" class="forgot-password-link">Quên mật khẩu?</a> 
-                </div> 
-                <!--n/======== Quên mật khẩu ========--> 
-                <!--======== Đăng ký nếu chưa có tài khoản ========--> 
-                <div class="form__register-link"> 
-                  <p>Chưa có tài khoản? <a href="#" class="register-link" >Đăng ký</a></p> 
-                </div>
-                <!--n/======== Đăng ký nếu chưa có tài khoản ========--> 
-              </div>
-            </form>
-          </div>
-          <!--n/========== Mục đăng nhập ==========-->
-
-          <!--========== Mục đăng ký ==========-->
-          <div class="register">
-            <h3 class="section__title">Tạo tài khoản</h3>
-            <form class="form grid">
-              <input
-                type="text"
-                placeholder="Tên người dùng"
-                class="form__input"
-              />
-              <input
-                type="email"
-                placeholder="Email của bạn"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Mật khẩu của bạn"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Xác nhận mật khẩu"
-                class="form__input"
-              />
-              <!--======== Nút xác nhận đăng ký ========-->
-              <div class="form__btn">
-                <button class="btn">Xác nhận & Đăng ký</button>
-              </div>
-              <!--n/======== Nút xác nhận đăng ký ========-->
-            </form>
-          </div>
-          <!--n/========== Mục đăng ký ==========-->
-        </div>
-      </section>
-      <!--n/=============== ĐĂNG NHẬP-ĐĂNG KÝ ===============-->
-
-     
-    </main>
-      
-
-      <!--=============== FOOTER ===============-->
-    <footer class="footer container">
-      <div class="footer__container grid">
-        <div class="footer__content">
-          <a href="index.html" class="footer__logo">
-            <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
+    <!--=============== n/HEADER ===============-->
+    <!-- Navigation -->
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo_red.svg" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo_red.svg" alt="">
           </a>
-          <h4 class="footer__subtitle">Liên hệ</h4>
-          <p class="footer__description">
-            <span>Địa chỉ:</span> 273 An Dương Vương, Phường Chợ Quán, TP. HCM
-          </p>
-          <p class="footer__description">
-            <span>Điện thoại:</span> +84 123456789
-          </p>
-          <p class="footer__description">
-            <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
-          </p>
-          <div class="footer__social">
-            <h4 class="footer__subtitle">Follow ngay</h4>
-            <div class="footer__links flex">
-              <a href="#">
-                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
-              </a>
-            </div>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
           </div>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Thông tin</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Về chúng tôi</a></li>
-            <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
-            <li><a href="#" class="footer__link">Chính sách</a></li>
-            <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
-            <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
-            <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Tài khoản</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Đăng nhập</a></li>
-            <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
-            <li><a href="#" class="footer__link">Wishlist</a></li>
-            <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
-            <li><a href="#" class="footer__link">Trợ giúp</a></li>
-            <li><a href="#" class="footer__link">Đơn hàng</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
-          <img src="./assets/img/thanhtoan.svg" style="width: 250px;" alt="" class="payment__img" />
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Trang chủ</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Cửa hàng</a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutus.html" class="nav__link">Về chúng tôi</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Liên hệ</a>
+          </li>
+        </ul>
+
+        <!-- Hộp tìm kiếm -->
+        <div class="header__search">
+          <input type="text" placeholder="Tìm kiếm sản phẩm" class="form__input" />
         </div>
       </div>
-      <div class="footer__bottom">
-        <p class="copyright">&copy; 2025 Sunkissed. All right reserved</p>
-        <span class="designer">Thiết kế bởi Trần Vĩnh Huy - 3122411072 - Web 1</span>
+
+      <!-- Wishlist và Giỏ hàng -->
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
       </div>
-    </footer>
- <!--=============== n/FOOTER ===============-->
+    </nav>
+  </header>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">Đăng nhập / Đăng ký</span></li>
+      </ul>
+    </section>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!-- Tiêu đề Merry Christmas -->
+    <div class="christmas-title-container">
+      <h1 class="christmas-title">
+        Merry Christmas!
+      </h1>
+    </div>
+    <!--n/ Tiêu đề Merry Christmas -->
+
+    <!--=============== ĐĂNG NHẬP-ĐĂNG KÝ ===============-->
+    <section class="login-register section--lg">
+      <div class="login-register__container container grid">
+        <!--========== Mục đăng nhập ==========-->
+        <div class="login">
+          <h3 class="section__title">Đăng nhập</h3>
+          <form class="form grid">
+            <input type="email" placeholder="Email của bạn" class="form__input" />
+            <input type="password" placeholder="Mật khẩu của bạn" class="form__input" />
+            <!--======== Nút đăng nhập ========-->
+            <div class="form__btn">
+              <button class="btn">Đăng nhập</button>
+              <!--n/======== Nút đăng nhập ========-->
+              <!--======== Quên mật khẩu ========-->
+              <div class="form__forgot-password">
+                <a href="#" class="forgot-password-link">Quên mật khẩu?</a>
+              </div>
+              <!--n/======== Quên mật khẩu ========-->
+              <!--======== Đăng ký nếu chưa có tài khoản ========-->
+              <div class="form__register-link">
+                <p>Chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
+              </div>
+              <!--n/======== Đăng ký nếu chưa có tài khoản ========-->
+            </div>
+          </form>
+        </div>
+        <!--n/========== Mục đăng nhập ==========-->
+
+        <!--========== Mục đăng ký ==========-->
+        <div class="register">
+          <h3 class="section__title">Tạo tài khoản</h3>
+          <form class="form grid">
+            <input type="text" placeholder="Tên người dùng" class="form__input" />
+            <input type="email" placeholder="Email của bạn" class="form__input" />
+            <input type="password" placeholder="Mật khẩu của bạn" class="form__input" />
+            <input type="password" placeholder="Xác nhận mật khẩu" class="form__input" />
+            <!--======== Nút xác nhận đăng ký ========-->
+            <div class="form__btn">
+              <button class="btn">Xác nhận & Đăng ký</button>
+            </div>
+            <!--n/======== Nút xác nhận đăng ký ========-->
+          </form>
+        </div>
+        <!--n/========== Mục đăng ký ==========-->
+      </div>
+    </section>
+    <!--n/=============== ĐĂNG NHẬP-ĐĂNG KÝ ===============-->
+
+
+  </main>
+
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Liên hệ</h4>
+        <p class="footer__description">
+          <span>Địa chỉ:</span> 273 An Dương Vương, Phường Chợ Quán, TP. HCM
+        </p>
+        <p class="footer__description">
+          <span>Điện thoại:</span> +84 123456789
+        </p>
+        <p class="footer__description">
+          <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow ngay</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Thông tin</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+          <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
+          <li><a href="#" class="footer__link">Chính sách</a></li>
+          <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
+          <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
+          <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Tài khoản</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Đăng nhập</a></li>
+          <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+          <li><a href="#" class="footer__link">Wishlist</a></li>
+          <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
+          <li><a href="#" class="footer__link">Trợ giúp</a></li>
+          <li><a href="#" class="footer__link">Đơn hàng</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
+        <img src="./assets/img/thanhtoan.svg" style="width: 250px;" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2025 Sunkissed. All right reserved</p>
+      <span class="designer">Thiết kế bởi Trần Vĩnh Huy - 3122411072 - Web 1</span>
+    </div>
+  </footer>
+  <!--=============== n/FOOTER ===============-->
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
