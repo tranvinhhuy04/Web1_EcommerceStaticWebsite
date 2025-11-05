@@ -23,6 +23,74 @@
 
     <title>Sunkissed | Nước uống dinh dưỡng</title>
   </head>
+
+  <script>
+// ==========================
+// XỬ LÝ ĐĂNG NHẬP
+// ==========================
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.querySelector(".login form");
+  const registerForm = document.querySelector(".register form");
+
+  // --- Đăng nhập ---
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = loginForm.querySelector('input[type="email"]').value.trim();
+    const password = loginForm.querySelector('input[type="password"]').value.trim();
+
+    if (email === "" || password === "") {
+      alert("Vui lòng nhập đầy đủ email và mật khẩu!");
+      return;
+    }
+
+    // 🔹 Kiểm tra email/mật khẩu mẫu
+    if (email === "khachhang@gmail.com" && password === "12345678") {
+      alert("Đăng nhập thành công!");
+      window.location.href = "index.html";
+    } else {
+      alert("Email hoặc mật khẩu không đúng!");
+    }
+  });
+
+  // --- Đăng ký ---
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const username = registerForm.querySelector('input[type="text"]').value.trim();
+    const email = registerForm.querySelector('input[type="email"]').value.trim();
+    const password = registerForm.querySelectorAll('input[type="password"]')[0].value.trim();
+    const confirm = registerForm.querySelectorAll('input[type="password"]')[1].value.trim();
+
+    if (!username || !email || !password || !confirm) {
+      alert("Vui lòng nhập đầy đủ thông tin đăng ký!");
+      return;
+    }
+
+    // Kiểm tra định dạng email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Email không hợp lệ!");
+      return;
+    }
+
+    // Kiểm tra độ dài mật khẩu
+    if (password.length < 6) {
+      alert("Mật khẩu phải có ít nhất 6 ký tự!");
+      return;
+    }
+
+    // Kiểm tra xác nhận mật khẩu
+    if (password !== confirm) {
+      alert("Xác nhận mật khẩu không khớp!");
+      return;
+    }
+
+    alert("Đăng ký thành công! Chuyển hướng về trang chủ...");
+    window.location.href = "index.html";
+  });
+});
+</script>
+
   <body>
         <!--=============== HEADER ===============-->
         <header class="header">
