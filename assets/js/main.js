@@ -19,6 +19,19 @@ if (navClose) {
   });
 }
 
+/*=============== SEARCH ENTER KEY ===============*/
+const searchInput = document.querySelector(".header__search .form__input");
+if (searchInput) {
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      window.location.href = "shop.html";
+    }
+  });
+}
+
+
+
 
 /*=============== SWIPER CATEGORIES ===============*/
 let swiperCategories = new Swiper(".categories__container", {
