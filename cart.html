@@ -7,16 +7,11 @@
 
   <!--=============== FLATICON ===============-->
   <link rel="icon" href="./assets/img/logo_hinh_red.svg" type="image/png">
-  <link
-    rel="stylesheet"
-    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-  />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
   <!--=============== SWIPER CSS ===============-->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="assets/css/style_cart.css" />
@@ -26,7 +21,7 @@
 </head>
 
 <body>
- <!--=============== HEADER ===============-->
+  <!--=============== HEADER ===============-->
   <header class="header">
     <div class="header__top">
       <div class="header__container container">
@@ -74,36 +69,36 @@
           <li class="nav__item">
             <a href="aboutus.html" class="nav__link">Về chúng tôi</a>
           </li>
-          
+
           <li class="nav__item">
-            <a href="lienhe.html" class="nav__link" >Liên hệ</a>
+            <a href="lienhe.html" class="nav__link">Liên hệ</a>
           </li>
           <li class="nav__item">
             <a href="accounts.html" class="nav__link">Tài khoản</a>
           </li>
         </ul>
-  
+
         <!-- Hộp tìm kiếm -->
         <div class="header__search">
           <input type="text" placeholder="Tìm kiếm sản phẩm" class="form__input" />
         </div>
       </div>
-  
-        <!-- Wishlist và Giỏ hàng -->
-        <div class="header__user-actions">
-          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
-            <img src="assets/img/icon-heart.svg" alt="" />
-            <span class="count">3</span>
-          </a>
-          <a href="cart.html" class="header__action-btn" title="Cart">
-            <img src="assets/img/icon-cart.svg" alt="" />
-            <span class="count">3</span>
-          </a>
-          <div class="header__action-btn nav__toggle" id="nav-toggle">
-            <img src="./assets//img/menu-burger.svg" alt="">
-          </div>
+
+      <!-- Wishlist và Giỏ hàng -->
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
   <!--=============== MAIN ===============-->
@@ -120,7 +115,7 @@
     <div class="section__content giohang">
       <!-- Container -->
       <div class="container">
-<div class="giohang_title">GIỎ HÀNG CỦA BẠN</div>
+        <div class="giohang_title">GIỎ HÀNG CỦA BẠN</div>
         <!-- Sản phẩm 1 -->
         <div class="product-list">
           <div class="w-r__container">
@@ -179,7 +174,7 @@
                   value="1" min="1" max="99" data-quantity-input class="quantity-input">
               </div>
               <!-- Các nút hành động cho sản phẩm -->
-              <button class="w-r__link btn--e-transparent-platinum-b-2">Xem Sản Phẩm</button>
+              <a href="details_HuongCam.html" class="w-r__link btn--e-transparent-platinum-b-2">Xem Sản Phẩm</a>
               <button class="w-r__link btn--e-transparent-platinum-b-2">Xóa Sản Phẩm</button>
             </div>
           </div>
@@ -219,10 +214,7 @@
 
         <!-- Các hành động của giỏ hàng -->
         <div class="cart__actions">
-          <a href="#" class="btn flex btn__md">
-            <i class="fi-rs-shuffle"></i> Cập nhật giỏ hàng
-          </a>
-          <a href="#" class="btn flex btn__md">
+          <a href="shop.html" class="btn flex btn__md">
             <i class="fi-rs-shopping-bag"></i> Tiếp tục mua sắm
           </a>
         </div>
@@ -234,40 +226,6 @@
 
         <!-- Thông tin chi tiết về phí vận chuyển, mã giảm giá và tổng đơn hàng-->
         <div class="cart__group grid">
-          <div>
-            <!-- Phí vận chuyển -->
-            <div class="cart__shippinp">
-              <h3 class="section__title">Phí vận chuyển</h3>
-              <form action="" class="form grid">
-                <input type="text" class="form__input" placeholder="Tỉnh/Thành phố" />
-                <div class="form__group grid">
-                  <input type="text" class="form__input" placeholder="Quận/Huyện" />
-                  <input type="text" class="form__input" placeholder="Mã bưu điện" />
-                </div>
-                <div class="form__btn">
-                  <button class="btn flex btn--sm">
-                    <i class="fi-rs-shuffle"></i> Cập nhật
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            <!-- Mã giảm giá -->
-            <div class="cart__coupon">
-              <h3 class="section__title">Mã giảm giá</h3>
-              <form action="" class="coupon__form form grid">
-                <div class="form__group grid">
-                  <input type="text" class="form__input" placeholder="Nhập mã giảm giá" />
-                  <div class="form__btn">
-                    <button class="btn flex btn--sm">
-                      <i class="fi-rs-label"></i> Áp dụng
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
           <!-- Tổng cộng đơn hàng -->
           <div class="cart__total">
             <h3 class="section__title">Tổng cộng</h3>
@@ -290,6 +248,48 @@
               <i class="fi fi-rs-box-alt"></i> Tiến hành thanh toán
             </a>
           </div>
+          <div>
+            <!-- Mã giảm giá -->
+            <div class="cart__coupon">
+              <h3 class="section__title">Mã giảm giá</h3>
+              <form action="" class="coupon__form form grid" onsubmit="return applyVoucher(event)">
+                <div class="form__group grid">
+                  <input type="text" id="voucherInput" class="form__input" placeholder="Nhập mã giảm giá" />
+                  <div class="form__btn">
+                    <button class="btn flex btn--sm" type="submit">
+                      <i class="fi-rs-label"></i> Áp dụng
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Script xử lý ngay trong HTML -->
+            <script>
+              function applyVoucher(event) {
+                event.preventDefault();
+                const input = document.getElementById('voucherInput');
+                const code = input.value.trim().toUpperCase();
+
+                const validCoupons = ['SUN10', 'GIANGSINH25', 'SALE50'];
+
+                if (code === '') {
+                  alert('⚠️ Vui lòng nhập mã giảm giá trước khi áp dụng!');
+                  return false;
+                }
+
+                if (validCoupons.includes(code)) {
+                  alert(`🎉 Mã ${code} đã được áp dụng thành công!`);
+                } else {
+                  alert('❌ Mã giảm giá vừa nhập không đúng hoặc đã hết hạn, vui lòng thử lại sau.');
+                }
+
+                input.value = '';
+                return false; // Ngăn load lại trang
+              }
+            </script>
+
+          </div>
         </div>
       </div>
     </div>
@@ -297,70 +297,70 @@
   </main>
 
   <!--=============== FOOTER ===============-->
-    <footer class="footer container">
-      <div class="footer__container grid">
-        <div class="footer__content">
-          <a href="index.html" class="footer__logo">
-            <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
-          </a>
-          <h4 class="footer__subtitle">Liên hệ</h4>
-          <p class="footer__description">
-            <span>Địa chỉ:</span> 273 An Dương Vương, Phường Chợ Quán, TP. HCM
-          </p>
-          <p class="footer__description">
-            <span>Điện thoại:</span> +84 123456789
-          </p>
-          <p class="footer__description">
-            <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
-          </p>
-          <div class="footer__social">
-            <h4 class="footer__subtitle">Follow ngay</h4>
-            <div class="footer__links flex">
-              <a href="#">
-                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
-              </a>
-            </div>
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/logo_red.svg" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Liên hệ</h4>
+        <p class="footer__description">
+          <span>Địa chỉ:</span> 273 An Dương Vương, Phường Chợ Quán, TP. HCM
+        </p>
+        <p class="footer__description">
+          <span>Điện thoại:</span> +84 123456789
+        </p>
+        <p class="footer__description">
+          <span>Giờ làm việc:</span> 8:00 - 21:00, Thứ 2 - Thứ 7
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow ngay</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
           </div>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Thông tin</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Về chúng tôi</a></li>
-            <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
-            <li><a href="#" class="footer__link">Chính sách</a></li>
-            <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
-            <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
-            <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Tài khoản</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Đăng nhập</a></li>
-            <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
-            <li><a href="#" class="footer__link">Wishlist</a></li>
-            <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
-            <li><a href="#" class="footer__link">Trợ giúp</a></li>
-            <li><a href="#" class="footer__link">Đơn hàng</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
-          <img src="./assets/img/thanhtoan.svg" style="width: 250px;" alt="" class="payment__img" />
-        </div>
       </div>
-      <div class="footer__bottom">
-        <p class="copyright">&copy; 2025 Sunkissed. All right reserved</p>
-        <span class="designer">Thiết kế bởi Trần Vĩnh Huy - 3122411072 - Web 1</span>
+      <div class="footer__content">
+        <h3 class="footer__title">Thông tin</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+          <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
+          <li><a href="#" class="footer__link">Chính sách</a></li>
+          <li><a href="#" class="footer__link">Điều khoản & Điều Kiện </a></li>
+          <li><a href="#" class="footer__link">Liên hệ chúng tôi</a></li>
+          <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
+        </ul>
       </div>
-    </footer>
- <!--=============== n/FOOTER ===============-->
+      <div class="footer__content">
+        <h3 class="footer__title">Tài khoản</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Đăng nhập</a></li>
+          <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+          <li><a href="#" class="footer__link">Wishlist</a></li>
+          <li><a href="#" class="footer__link">Theo dõi đơn hàng</a></li>
+          <li><a href="#" class="footer__link">Trợ giúp</a></li>
+          <li><a href="#" class="footer__link">Đơn hàng</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Cổng thanh toán bảo mật</h3>
+        <img src="./assets/img/thanhtoan.svg" style="width: 250px;" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2025 Sunkissed. All right reserved</p>
+      <span class="designer">Thiết kế bởi Trần Vĩnh Huy - 3122411072 - Web 1</span>
+    </div>
+  </footer>
+  <!--=============== n/FOOTER ===============-->
 
   <!--=============== SWIPER JS ===============-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -368,6 +368,36 @@
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/nhat_wishlist.js"></script>
   <script src="assets/js/ct_main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Lấy tất cả nút "Xóa Sản Phẩm"
+      const deleteButtons = document.querySelectorAll('.w-r__link.btn--e-transparent-platinum-b-2');
+
+      deleteButtons.forEach(button => {
+        if (button.textContent.trim() === 'Xóa Sản Phẩm') {
+          button.addEventListener('click', function (e) {
+            e.preventDefault();
+            const confirmed = confirm('🗑️ Bạn có chắc muốn xóa sản phẩm này khỏi giỏ hàng?');
+            if (!confirmed) return;
+
+            // ✅ Xác định phần tử chứa toàn bộ sản phẩm
+            // Tìm phần tử cao nhất bao quanh (có thể là .cart-item hoặc .w-r__wrap)
+            let productEl = this.closest('.cart-item');
+            if (!productEl) productEl = this.closest('.w-r__wrap') || this.closest('.w-r__wrap-2')?.parentElement;
+
+            if (productEl) {
+              productEl.remove(); // 🧹 Xóa sản phẩm khỏi giao diện
+              console.log('✅ Đã xóa sản phẩm');
+            } else {
+              console.warn('⚠️ Không tìm thấy phần tử cần xóa');
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+
 </body>
 
 </html>
