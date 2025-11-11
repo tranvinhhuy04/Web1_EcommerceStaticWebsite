@@ -149,8 +149,8 @@
         <div class="content">
           <div class="page-header">
             <div class="page-title">
-              <h4>Product Category list</h4>
-              <h6>View/Search product Category</h6>
+              <h4>Danh Sách Danh Mục Sản Phẩm</h4>
+              <h6>Xem/Tìm kiếm danh mục sản phẩm</h6>
             </div>
             <div class="page-btn">
               <a href="addcategory.html" class="btn btn-added">
@@ -163,15 +163,7 @@
             <div class="card-body">
               <div class="table-top">
                 <div class="search-set">
-                  <div class="search-path">
-                    <a class="btn btn-filter" id="filter_search">
-                      <img src="assets/img/icons/filter.svg" alt="img" />
-                      <span><img src="assets/img/icons/closes.svg" alt="img" /></span>
-                    </a>
-                  </div>
-                  <div class="search-input">
-                    <a class="btn btn-searchset"><img src="assets/img/icons/search-white.svg" alt="img" /></a>
-                  </div>
+
                 </div>
                 <div class="wordset">
                   <ul>
@@ -190,43 +182,8 @@
                   </ul>
                 </div>
               </div>
-
-              <div class="card" id="filter_inputs">
-                <div class="card-body pb-0">
-                  <div class="row">
-                    <div class="col-lg-2 col-sm-6 col-12">
-                      <div class="form-group">
-                        <select class="select">
-                          <option>Choose Category</option>
-                          <option>Computers</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 col-12">
-                      <div class="form-group">
-                        <select class="select">
-                          <option>Choose Sub Category</option>
-                          <option>Fruits</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 col-12">
-                      <div class="form-group">
-                        <select class="select">
-                          <option>Choose Sub Brand</option>
-                          <option>Iphone</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-1 col-sm-6 col-12 ms-auto">
-                      <div class="form-group">
-                        <a class="btn btn-filters ms-auto"><img src="assets/img/icons/search-whites.svg"
-                            alt="img" /></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- Nhớ include Font Awesome ở <head> nếu chưa có -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
               <div class="table-responsive">
                 <table class="table datanew">
@@ -238,342 +195,255 @@
                           <span class="checkmarks"></span>
                         </label>
                       </th>
-                      <th>Category name</th>
-                      <th>Category Code</th>
-                      <th>Description</th>
-                      <th>Created By</th>
-                      <th>Action</th>
+                      <th>Tên danh mục</th>
+                      <th>Mã danh mục</th>
+                      <th>Mô tả</th>
+                      <th>Người tạo</th>
+                      <th>Trạng thái hiển thị</th>
+                      <th>Hành động</th>
                     </tr>
                   </thead>
                   <tbody>
+                    <!-- === Tropical === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/td_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Computers</a>
+                        <a href="javascript:void(0);">Tropical</a>
                       </td>
-                      <td>CT001</td>
-                      <td>Computers Description</td>
+                      <td>DM001</td>
+                      <td>Nước trái cây nhiệt đới tươi mát</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Cà Phê === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/cf_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Fruits</a>
+                        <a href="javascript:void(0);">Cà Phê</a>
                       </td>
-                      <td>CT002</td>
-                      <td>Fruits Description</td>
+                      <td>DM002</td>
+                      <td>Các loại cà phê đóng lon thơm ngon</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Trà Thảo Mộc === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/ht_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Fruits</a>
+                        <a href="javascript:void(0);">Trà Thảo Mộc</a>
                       </td>
-                      <td>CT003</td>
-                      <td>Fruits Description</td>
+                      <td>DM003</td>
+                      <td>Trà thảo mộc thanh nhiệt và giải độc</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Trà Sữa === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/mt_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Fruits</a>
+                        <a href="javascript:void(0);">Trà Sữa</a>
                       </td>
-                      <td>CT004</td>
-                      <td>Fruits Description</td>
+                      <td>DM004</td>
+                      <td>Trà sữa thơm béo nhiều hương vị</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Sữa === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/mi_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Accessories</a>
+                        <a href="javascript:void(0);">Sữa</a>
                       </td>
-                      <td>CT005</td>
-                      <td>Accessories Description</td>
+                      <td>DM005</td>
+                      <td>Sữa đóng lon bổ dưỡng cho mọi lứa tuổi</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Nước Tăng Lực === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/ed_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Accessories</a>
+                        <a href="javascript:void(0);">Nước Tăng Lực</a>
                       </td>
-                      <td>CT006</td>
-                      <td>Accessories Description</td>
+                      <td>DM006</td>
+                      <td>Các loại nước tăng lực giúp tỉnh táo, sảng khoái</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Kombucha === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/kom_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Accessories</a>
+                        <a href="javascript:void(0);">Kombucha</a>
                       </td>
-                      <td>CT007</td>
-                      <td>Accessories Description</td>
+                      <td>DM007</td>
+                      <td>Thức uống lên men tự nhiên tốt cho tiêu hóa</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Mock-tail === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/mocktail_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Accessories</a>
+                        <a href="javascript:void(0);">Mock-tail</a>
                       </td>
-                      <td>CT008</td>
-                      <td>Accessories Description</td>
+                      <td>DM008</td>
+                      <td>Thức uống pha trộn không cồn, hương vị đặc biệt</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
+
+                    <!-- === Smoothie === -->
                     <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
+                      <td><label class="checkboxs"><input type="checkbox" /><span class="checkmarks"></span></label>
                       </td>
                       <td class="productimgname">
                         <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
+                          <img src="../assets/img/sm_p1_bg.png" alt="product" />
                         </a>
-                        <a href="javascript:void(0);">Accessories</a>
+                        <a href="javascript:void(0);">Smoothie</a>
                       </td>
-                      <td>CT009</td>
-                      <td>Accessories Description</td>
+                      <td>DM009</td>
+                      <td>Sinh tố hoa quả mát lạnh, thơm ngon</td>
                       <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
                       <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
+                        <a class="me-3" href="javascript:void(0);" title="Ẩn/Hiện" onclick="toggleVisibility(this)">
+                          <i class="fas fa-eye text-success"></i>
                         </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td class="productimgname">
-                        <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
-                        </a>
-                        <a href="javascript:void(0);">Accessories</a>
-                      </td>
-                      <td>CT0010</td>
-                      <td>Accessories Description</td>
-                      <td>Admin</td>
-                      <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
-                        </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td class="productimgname">
-                        <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
-                        </a>
-                        <a href="javascript:void(0);">Accessories</a>
-                      </td>
-                      <td>CT008</td>
-                      <td>Accessories Description</td>
-                      <td>Admin</td>
-                      <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
-                        </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td class="productimgname">
-                        <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
-                        </a>
-                        <a href="javascript:void(0);">Accessories</a>
-                      </td>
-                      <td>CT009</td>
-                      <td>Accessories Description</td>
-                      <td>Admin</td>
-                      <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
-                        </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label class="checkboxs">
-                          <input type="checkbox" />
-                          <span class="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td class="productimgname">
-                        <a href="javascript:void(0);" class="product-img">
-                          <img src="assets/img/product/noimage.png" alt="product" />
-                        </a>
-                        <a href="javascript:void(0);">Accessories</a>
-                      </td>
-                      <td>CT0010</td>
-                      <td>Accessories Description</td>
-                      <td>Admin</td>
-                      <td>
-                        <a class="me-3" href="editcategory.html">
-                          <img src="assets/img/icons/edit.svg" alt="img" />
-                        </a>
-                        <a class="me-3 confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
+                        <a class="me-3" href="editcategory.html"><i class="fas fa-pen text-primary"></i></a>
+                        <a class="me-3" href="javascript:void(0);" onclick="confirm('Xóa danh mục này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+
+              <!-- Script toggle ẩn/hiện -->
+              <script>
+                function toggleVisibility(el) {
+                  const row = el.closest("tr");
+                  const status = row.querySelector("td:nth-child(6) span");
+                  const icon = el.querySelector("i");
+
+                  if (status.textContent === "Hiển thị") {
+                    status.textContent = "Ẩn";
+                    status.className = "bg-lightred badges";
+                    icon.classList.remove("fa-eye", "text-success");
+                    icon.classList.add("fa-eye-slash", "text-danger");
+                  } else {
+                    status.textContent = "Hiển thị";
+                    status.className = "bg-lightgreen badges";
+                    icon.classList.remove("fa-eye-slash", "text-danger");
+                    icon.classList.add("fa-eye", "text-success");
+                  }
+                }
+              </script>
+
             </div>
           </div>
         </div>
