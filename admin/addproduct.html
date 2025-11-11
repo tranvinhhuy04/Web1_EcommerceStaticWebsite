@@ -1,387 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <meta name="description" content="POS - Bootstrap Admin Template">
-    <meta name="keywords"
-        content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
-    <meta name="author" content="Dreamguys - Bootstrap Admin Template">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Sunkissed Admin</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo_hinh_red.svg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="description" content="POS - Bootstrap Admin Template">
+  <meta name="keywords"
+    content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
+  <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sunkissed Admin</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo_hinh_red.svg">
 
-    <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
 
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-  <body>
-    <div id="global-loader">
-      <div class="whirly-loader"></div>
-    </div>
 
-    <div class="main-wrapper">
-      <div class="header">
+<body>
+  <div id="global-loader">
+    <div class="whirly-loader"></div>
+  </div>
 
-            <div class="header-left active">
-                <a href="index.html" class="logo">
-                    <img src="../assets/img/logo_red.svg" alt="">
-                </a>
-            </div>
+  <div class="main-wrapper">
+    <div class="header">
 
-            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
-                <span class="bar-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-
-            <ul class="nav user-menu">
-
-                <li class="nav-item dropdown has-arrow main-drop">
-                    <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
-                        <span class="user-img"><img src="../assets/img/khachhang1.png" alt="">
-                            <span class="status online"></span></span>
-                    </a>
-                    <div class="dropdown-menu menu-drop-user">
-                        <div class="profilename">
-                            <div class="profileset">
-                                <span class="user-img"><img src="../assets/img/khachhang1.png" alt="">
-                                    <span class="status online"></span></span>
-                                <div class="profilesets">
-                                    <h6>Trần Vĩnh Huy</h6>
-                                    <h5>Admin</h5>
-                                </div>
-                            </div>
-                            <hr class="m-0">
-                            <a class="dropdown-item logout pb-0" href="../login-register.html"><img
-                                    src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-
-            <div class="dropdown mobile-user-menu">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="generalsettings.html">Settings</a>
-                    <a class="dropdown-item" href="signin.html">Logout</a>
-                </div>
-            </div>
-
-        </div>
-
-      <div class="sidebar" id="sidebar">
-            <div class="sidebar-inner slimscroll">
-                <div id="sidebar-menu" class="sidebar-menu">
-                    <ul>
-                        <li class="active">
-                            <a href="index.html"><img src="assets/img/icons/dashboard.svg" alt="img"><span>
-                                    Dashboard</span> </a>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span>
-                                    Menu</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="productlist.html">Menu List</a></li>
-                                <li><a href="addproduct.html">Add Menu</a></li>
-                                <li><a href="categorylist.html">Category List</a></li>
-                                <li><a href="addcategory.html">Add Category</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img"><span>
-                                    Purchase</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="purchaselist.html">Purchase List</a></li>
-                                <li><a href="addpurchase.html">Add Purchase</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/time.svg" alt="img"><span>
-                                    Report</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="purchaseorderreport.html">Purchase order report</a></li>
-                                <li><a href="inventoryreport.html">Inventory Report</a></li>
-                                <li><a href="salesreport.html">Sales Report</a></li>
-                                <li><a href="invoicereport.html">Invoice Report</a></li>
-                                <li><a href="purchasereport.html">Purchase Report</a></li>
-                                <li><a href="customerreport.html">Customer Report</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span>
-                                    Users</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="userlists.html">Users List</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span>
-                                    Settings</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="paymentsettings.html">Payment Settings</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-.form-control,
-.select,
-select {
-  height: 45px;
-  border: 1px solid #ced4da;
-  border-radius: 6px;
-  padding: 8px 12px;
-  width: 100%;
-  font-size: 15px;
-  color: #333;
-  background-color: #fff;
-}
-.form-group label {
-  font-weight: 500;
-  margin-bottom: 6px;
-}
-textarea.form-control {
-  height: auto;
-  min-height: 100px;
-}
-.btn-submit, .btn-cancel {
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-}
-.btn-submit {
-  background-color: #007bff;
-  color: #fff;
-}
-.btn-cancel {
-  background-color: #6c757d;
-  color: #fff;
-}
-.btn-submit:hover, .btn-cancel:hover {
-  opacity: 0.9;
-}
-.image-upload {
-  border: 1px dashed #ccc;
-  border-radius: 6px;
-  padding: 20px;
-  text-align: center;
-}
-.image-upload label {
-  cursor: pointer;
-}
-.image-upload img {
-  width: 40px;
-  margin-bottom: 8px;
-}
-#previewContainer img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-</style>
-
-<div class="page-wrapper">
-  <div class="content">
-    <div class="page-header">
-      <div class="page-title">
-        <h4>Thêm sản phẩm mới</h4>
-        <h6>Tạo mới sản phẩm trong hệ thống</h6>
+      <div class="header-left active">
+        <a href="index.html" class="logo">
+          <img src="../assets/img/logo_red.svg" alt="">
+        </a>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="row g-3">
+      <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
 
-          <!-- Tên sản phẩm -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Tên sản phẩm</label>
-              <input type="text" class="form-control" placeholder="Nhập tên sản phẩm">
-            </div>
-          </div>
+      <ul class="nav user-menu">
 
-          <!-- Danh mục -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Danh mục</label>
-              <select class="form-control">
-                <option selected>Chọn danh mục</option>
-                <option>Trà Sữa</option>
-                <option>Cà Phê</option>
-                <option>Trà Thảo Mộc</option>
-                <option>Kombucha</option>
-                <option>Mocktail</option>
-                <option>Sữa</option>
-                <option>Nước Tăng Lực</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Đơn vị -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Đơn vị</label>
-              <select class="form-control">
-                <option selected>Chọn đơn vị</option>
-                <option>Lon</option>
-                <option>Chai</option>
-                <option>Ly</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Mã sản phẩm -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Mã sản phẩm</label>
-              <input type="text" class="form-control" placeholder="Ví dụ: SP010">
-            </div>
-          </div>
-
-          <!-- Giá -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Giá (vnđ)</label>
-              <input type="number" class="form-control" placeholder="Nhập giá bán">
-            </div>
-          </div>
-
-          <!-- Giảm giá -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Giảm giá</label>
-              <select class="form-control">
-                <option>Không</option>
-                <option>10%</option>
-                <option>15%</option>
-                <option>20%</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Số lượng -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Số lượng tồn kho</label>
-              <input type="number" class="form-control" placeholder="Nhập số lượng hiện có">
-            </div>
-          </div>
-
-          <!-- Trạng thái -->
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="form-group">
-              <label>Trạng thái hiển thị</label>
-              <select class="form-control">
-                <option selected>Hiển thị</option>
-                <option>Ẩn</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Mô tả -->
-          <div class="col-lg-12">
-            <div class="form-group">
-              <label>Mô tả sản phẩm</label>
-              <textarea class="form-control" placeholder="Nhập mô tả chi tiết về sản phẩm"></textarea>
-            </div>
-          </div>
-
-          <!-- Ảnh sản phẩm -->
-          <div class="col-lg-12">
-            <div class="form-group">
-              <label>Ảnh sản phẩm</label>
-              <div class="image-upload">
-                <input type="file" id="productImage" accept="image/*" onchange="previewImage(event)" style="display:none;">
-                <label for="productImage">
-                  <img src="assets/img/icons/upload.svg" alt="upload icon">
-                  <h4>Chọn hoặc kéo thả ảnh sản phẩm</h4>
-                </label>
-                <div id="previewContainer" style="margin-top:15px;">
-                  <img id="previewImage" src="assets/img/no-image.png" alt="Xem trước ảnh">
-                  <p id="previewName" style="margin-top:5px; font-size:14px; color:#555;">Chưa có ảnh được chọn</p>
+        <li class="nav-item dropdown has-arrow main-drop">
+          <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+            <span class="user-img"><img src="../assets/img/khachhang1.png" alt="">
+              <span class="status online"></span></span>
+          </a>
+          <div class="dropdown-menu menu-drop-user">
+            <div class="profilename">
+              <div class="profileset">
+                <span class="user-img"><img src="../assets/img/khachhang1.png" alt="">
+                  <span class="status online"></span></span>
+                <div class="profilesets">
+                  <h6>Trần Vĩnh Huy</h6>
+                  <h5>Admin</h5>
                 </div>
               </div>
+              <hr class="m-0">
+              <a class="dropdown-item logout pb-0" href="../login-register.html"><img src="assets/img/icons/log-out.svg"
+                  class="me-2" alt="img">Logout</a>
             </div>
           </div>
+        </li>
+      </ul>
 
-          <!-- Nút thao tác -->
-          <div class="col-12 text-center mt-3">
-            <a href="javascript:void(0);" class="btn btn-submit me-2" onclick="submitForm()">Thêm sản phẩm</a>
-            <a href="javascript:void(0);" class="btn btn-cancel" onclick="cancelForm()">Hủy</a>
-          </div>
 
+      <div class="dropdown mobile-user-menu">
+        <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="profile.html">My Profile</a>
+          <a class="dropdown-item" href="generalsettings.html">Settings</a>
+          <a class="dropdown-item" href="signin.html">Logout</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+          <ul>
+            <li class="active">
+              <a href="index.html"><img src="assets/img/icons/dashboard.svg" alt="img"><span>
+                  Dashboard</span> </a>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span>
+                  Sản Phẩm</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="productlist.html">Danh Sách Sản Phẩm</a></li>
+                <li><a href="addproduct.html">Thêm Sản Phẩm</a></li>
+                <li><a href="categorylist.html">Danh Sách Danh Mục</a></li>
+                <li><a href="addcategory.html">Thêm Danh Mục</a></li>
+                <li><a href="supplierlist.html">Quản Lý Giá Bán</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img"><span>
+                  Phiếu Nhập</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="purchaselist.html">Danh Sách Phiếu Nhập</a></li>
+                <li><a href="addpurchase.html">Thêm Phiếu Nhập</a></li>
+              </ul>
+            </li>
+
+
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span>
+                  Users</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="userlists.html">Users List</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span>
+                  Đơn Hàng</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="orderlist.html">Danh Sách Đơn Hàng</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/time.svg" alt="img"><span>
+                  Report</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="purchaseorderreport.html">Số Lượng Tồn</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span>
+                  Settings</span> <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="paymentsettings.html">Cài Đặt Thanh Toán</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<script>
-function previewImage(event) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      document.getElementById("previewImage").src = e.target.result;
-      document.getElementById("previewName").textContent = file.name;
-    };
-    reader.readAsDataURL(file);
-  }
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      .form-control,
+      .select,
+      select {
+        height: 45px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        padding: 8px 12px;
+        width: 100%;
+        font-size: 15px;
+        color: #333;
+        background-color: #fff;
+      }
 
-function submitForm() {
-  alert("✅ Thêm sản phẩm thành công!");
-  window.location.href = "productlist.html";
-}
+      .form-group label {
+        font-weight: 500;
+        margin-bottom: 6px;
+      }
 
-function cancelForm() {
-  alert("✅ Đã hủy thao tác, quay lại danh sách sản phẩm!");
-  window.location.href = "productlist.html";
-}
-</script>
+      textarea.form-control {
+        height: auto;
+        min-height: 100px;
+      }
 
+      .btn-submit,
+      .btn-cancel {
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-submit {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .btn-cancel {
+        background-color: #6c757d;
+        color: #fff;
+      }
+
+      .btn-submit:hover,
+      .btn-cancel:hover {
+        opacity: 0.9;
+      }
+
+      .image-upload {
+        border: 1px dashed #ccc;
+        border-radius: 6px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .image-upload label {
+        cursor: pointer;
+      }
+
+      .image-upload img {
+        width: 40px;
+        margin-bottom: 8px;
+      }
+
+      #previewContainer img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+    </style>
+
+    <div class="page-wrapper">
+      <div class="content">
+        <div class="page-header">
+          <div class="page-title">
+            <h4>Thêm sản phẩm mới</h4>
+            <h6>Tạo mới sản phẩm trong hệ thống</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="row g-3">
+
+              <!-- Tên sản phẩm -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Tên sản phẩm</label>
+                  <input type="text" class="form-control" placeholder="Nhập tên sản phẩm">
+                </div>
+              </div>
+
+              <!-- Danh mục -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Danh mục</label>
+                  <select class="form-control">
+                    <option selected>Chọn danh mục</option>
+                    <option>Trà Sữa</option>
+                    <option>Cà Phê</option>
+                    <option>Trà Thảo Mộc</option>
+                    <option>Kombucha</option>
+                    <option>Mocktail</option>
+                    <option>Sữa</option>
+                    <option>Nước Tăng Lực</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Đơn vị -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Đơn vị</label>
+                  <select class="form-control">
+                    <option selected>Chọn đơn vị</option>
+                    <option>Lon</option>
+                    <option>Chai</option>
+                    <option>Ly</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Mã sản phẩm -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Mã sản phẩm</label>
+                  <input type="text" class="form-control" placeholder="Ví dụ: SP010">
+                </div>
+              </div>
+
+              <!-- Giá -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Giá (vnđ)</label>
+                  <input type="number" class="form-control" placeholder="Nhập giá bán">
+                </div>
+              </div>
+
+              <!-- Giảm giá -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Giảm giá</label>
+                  <select class="form-control">
+                    <option>Không</option>
+                    <option>10%</option>
+                    <option>15%</option>
+                    <option>20%</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Số lượng -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Số lượng tồn kho</label>
+                  <input type="number" class="form-control" placeholder="Nhập số lượng hiện có">
+                </div>
+              </div>
+
+              <!-- Trạng thái -->
+              <div class="col-lg-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label>Trạng thái hiển thị</label>
+                  <select class="form-control">
+                    <option selected>Hiển thị</option>
+                    <option>Ẩn</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Mô tả -->
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Mô tả sản phẩm</label>
+                  <textarea class="form-control" placeholder="Nhập mô tả chi tiết về sản phẩm"></textarea>
+                </div>
+              </div>
+
+              <!-- Ảnh sản phẩm -->
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label>Ảnh sản phẩm</label>
+                  <div class="image-upload">
+                    <input type="file" id="productImage" accept="image/*" onchange="previewImage(event)"
+                      style="display:none;">
+                    <label for="productImage">
+                      <img src="assets/img/icons/upload.svg" alt="upload icon">
+                      <h4>Chọn hoặc kéo thả ảnh sản phẩm</h4>
+                    </label>
+                    <div id="previewContainer" style="margin-top:15px;">
+                      <img id="previewImage" src="assets/img/no-image.png" alt="Xem trước ảnh">
+                      <p id="previewName" style="margin-top:5px; font-size:14px; color:#555;">Chưa có ảnh được chọn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nút thao tác -->
+              <div class="col-12 text-center mt-3">
+                <a href="javascript:void(0);" class="btn btn-submit me-2" onclick="submitForm()">Thêm sản phẩm</a>
+                <a href="javascript:void(0);" class="btn btn-cancel" onclick="cancelForm()">Hủy</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+      function previewImage(event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            document.getElementById("previewImage").src = e.target.result;
+            document.getElementById("previewName").textContent = file.name;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
 
-    <script src="assets/js/feather.min.js"></script>
+      function submitForm() {
+        alert("✅ Thêm sản phẩm thành công!");
+        window.location.href = "productlist.html";
+      }
 
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
+      function cancelForm() {
+        alert("✅ Đã hủy thao tác, quay lại danh sách sản phẩm!");
+        window.location.href = "productlist.html";
+      }
+    </script>
 
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+  </div>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
+  <script src="assets/js/feather.min.js"></script>
 
-    <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
-    <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+  <script src="assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+  <script src="assets/js/jquery.dataTables.min.js"></script>
+  <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+  <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+  <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
