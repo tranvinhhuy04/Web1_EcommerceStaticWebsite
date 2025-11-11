@@ -186,194 +186,218 @@
                 </div>
               </div>
 
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-.table-responsive {
-  max-height: 600px;
-  overflow-y: auto;
-  border-radius: 8px;
-}
-.table th, .table td {
-  vertical-align: middle;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.table td.productimgname {
-  text-align: left;
-}
-.productimgname img {
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  margin-right: 8px;
-  object-fit: cover;
-}
-.badges {
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: white;
-}
-.bg-lightgreen { background-color: #28a745; }
-.bg-lightred { background-color: #dc3545; }
-.table thead th {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 2;
-}
-</style>
+              <style>
+                .table-responsive {
+                  max-height: 600px;
+                  overflow-y: auto;
+                  border-radius: 8px;
+                }
 
-<div class="table-responsive">
-  <table class="table datanew table-bordered">
-    <thead>
-      <tr>
-        <th><input type="checkbox" id="select-all"></th>
-        <th>Sản phẩm</th>
-        <th>Mã SP</th>
-        <th>Danh mục</th>
-        <th>Giá</th>
-        <th>Đơn vị</th>
-        <th>Tồn kho</th>
-        <th>Người tạo</th>
-        <th>Trạng thái hiển thị</th>
-        <th>Hành động</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- SP001 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/mt_p1_bg.png">Hương Socola</td>
-        <td>SP001</td>
-        <td>Trà Sữa</td>
-        <td>30.000 vnđ</td>
-        <td>Lon</td>
-        <td>120</td>
-        <td>Admin</td>
-        <td><span class="bg-lightgreen badges">Hiển thị</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye text-success"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
+                .table th,
+                .table td {
+                  vertical-align: middle;
+                  text-align: center;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
 
-      <!-- SP002 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/cf_p1_bg.png">Vị Sài Gòn</td>
-        <td>SP002</td>
-        <td>Cà Phê</td>
-        <td>35.000 vnđ</td>
-        <td>Lon</td>
-        <td>85</td>
-        <td>Admin</td>
-        <td><span class="bg-lightgreen badges">Hiển thị</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye text-success"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
+                .table td.productimgname {
+                  text-align: left;
+                }
 
-      <!-- SP003 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/ht_p1_bg.png">Hương Chanh</td>
-        <td>SP003</td>
-        <td>Trà Thảo Mộc</td>
-        <td>25.000 vnđ</td>
-        <td>Lon</td>
-        <td>92</td>
-        <td>Admin</td>
-        <td><span class="bg-lightgreen badges">Hiển thị</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye text-success"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
+                .productimgname img {
+                  width: 45px;
+                  height: 45px;
+                  border-radius: 8px;
+                  margin-right: 8px;
+                  object-fit: cover;
+                }
 
-      <!-- SP004 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/kom_p1_bg.png">Hương Lựu Đỏ</td>
-        <td>SP004</td>
-        <td>Kombucha</td>
-        <td>35.000 vnđ</td>
-        <td>Lon</td>
-        <td>60</td>
-        <td>Admin</td>
-        <td><span class="bg-lightgreen badges">Hiển thị</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye text-success"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
+                .badges {
+                  padding: 5px 12px;
+                  border-radius: 6px;
+                  font-weight: 500;
+                  color: white;
+                }
 
-      <!-- SP005 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/sm_p1_bg.png">Hương Chanh Dây</td>
-        <td>SP005</td>
-        <td>Mocktail</td>
-        <td>23.000 vnđ</td>
-        <td>Lon</td>
-        <td>78</td>
-        <td>Admin</td>
-        <td><span class="bg-lightgreen badges">Hiển thị</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye text-success"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
+                .bg-lightgreen {
+                  background-color: #28a745;
+                }
 
-      <!-- SP006 -->
-      <tr>
-        <td><input type="checkbox"></td>
-        <td class="productimgname"><img src="../assets/img/td_p2_bg.png">Hương Dứa</td>
-        <td>SP006</td>
-        <td>Tropical</td>
-        <td>35.000 vnđ</td>
-        <td>Lon</td>
-        <td>0</td>
-        <td>Admin</td>
-        <td><span class="bg-lightred badges">Ẩn</span></td>
-        <td>
-          <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
-          <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i class="fas fa-eye-slash text-danger"></i></a>
-          <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i class="fas fa-trash text-danger"></i></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+                .bg-lightred {
+                  background-color: #dc3545;
+                }
 
-<script>
-function toggleVisibility(el) {
-  const row = el.closest("tr");
-  const status = row.querySelector("td:nth-child(9) span");
-  const icon = el.querySelector("i");
+                .table thead th {
+                  position: sticky;
+                  top: 0;
+                  background: #fff;
+                  z-index: 2;
+                }
+              </style>
 
-  if (status.textContent === "Hiển thị") {
-    status.textContent = "Ẩn";
-    status.className = "bg-lightred badges";
-    icon.classList.remove("fa-eye", "text-success");
-    icon.classList.add("fa-eye-slash", "text-danger");
-  } else {
-    status.textContent = "Hiển thị";
-    status.className = "bg-lightgreen badges";
-    icon.classList.remove("fa-eye-slash", "text-danger");
-    icon.classList.add("fa-eye", "text-success");
-  }
-}
-</script>
+              <div class="table-responsive">
+                <table class="table datanew table-bordered">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" id="select-all"></th>
+                      <th>Sản phẩm</th>
+                      <th>Mã SP</th>
+                      <th>Danh mục</th>
+                      <th>Giá</th>
+                      <th>Đơn vị</th>
+                      <th>Tồn kho</th>
+                      <th>Người tạo</th>
+                      <th>Trạng thái hiển thị</th>
+                      <th>Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- SP001 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/mt_p1_bg.png">Hương Socola</td>
+                      <td>SP001</td>
+                      <td>Trà Sữa</td>
+                      <td>30.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>120</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye text-success"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+
+                    <!-- SP002 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/cf_p1_bg.png">Vị Sài Gòn</td>
+                      <td>SP002</td>
+                      <td>Cà Phê</td>
+                      <td>35.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>85</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye text-success"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+
+                    <!-- SP003 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/ht_p1_bg.png">Hương Chanh</td>
+                      <td>SP003</td>
+                      <td>Trà Thảo Mộc</td>
+                      <td>25.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>92</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye text-success"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+
+                    <!-- SP004 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/kom_p1_bg.png">Hương Lựu Đỏ</td>
+                      <td>SP004</td>
+                      <td>Kombucha</td>
+                      <td>35.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>60</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye text-success"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+
+                    <!-- SP005 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/sm_p1_bg.png">Hương Chanh Dây</td>
+                      <td>SP005</td>
+                      <td>Mocktail</td>
+                      <td>23.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>78</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightgreen badges">Hiển thị</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye text-success"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+
+                    <!-- SP006 -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td class="productimgname"><img src="../assets/img/td_p2_bg.png">Hương Dứa</td>
+                      <td>SP006</td>
+                      <td>Tropical</td>
+                      <td>35.000 vnđ</td>
+                      <td>Lon</td>
+                      <td>0</td>
+                      <td>Admin</td>
+                      <td><span class="bg-lightred badges">Ẩn</span></td>
+                      <td>
+                        <a href="editproduct.html" class="me-2"><i class="fas fa-pen text-primary"></i></a>
+                        <a href="javascript:void(0);" onclick="toggleVisibility(this)" class="me-2"><i
+                            class="fas fa-eye-slash text-danger"></i></a>
+                        <a href="javascript:void(0);" onclick="confirm('Xóa sản phẩm này?')"><i
+                            class="fas fa-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <script>
+                function toggleVisibility(el) {
+                  const row = el.closest("tr");
+                  const status = row.querySelector("td:nth-child(9) span");
+                  const icon = el.querySelector("i");
+
+                  if (status.textContent === "Hiển thị") {
+                    status.textContent = "Ẩn";
+                    status.className = "bg-lightred badges";
+                    icon.classList.remove("fa-eye", "text-success");
+                    icon.classList.add("fa-eye-slash", "text-danger");
+                  } else {
+                    status.textContent = "Hiển thị";
+                    status.className = "bg-lightgreen badges";
+                    icon.classList.remove("fa-eye-slash", "text-danger");
+                    icon.classList.add("fa-eye", "text-success");
+                  }
+                }
+              </script>
 
 
 
