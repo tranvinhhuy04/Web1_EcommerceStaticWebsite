@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="POS - Bootstrap Admin Template">
+    <meta name="keywords"
+        content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive">
+    <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Sunkissed Admin</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo_hinh_red.svg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body class="account-page">
+
+    <div class="main-wrapper">
+        <div class="account-content">
+            <div class="login-wrapper">
+                <div class="login-content">
+                    <div class="login-userset">
+                        <div class="login-logo">
+                            <img src="../assets/img/logo_red.svg" alt="img">
+                        </div>
+                        <div class="login-userheading">
+                            <h3>Đăng Nhập</h3>
+                            <h4>Vui lòng đăng nhập vào tài khoản của bạn</h4>
+                        </div>
+                        <div class="form-login">
+                            <label>Email</label>
+                            <div class="form-addons">
+                                <input type="text" id="email" placeholder="Nhập địa chỉ email của bạn">
+                                <img src="assets/img/icons/mail.svg" alt="img">
+                            </div>
+                        </div>
+
+                        <div class="form-login">
+                            <label>Password</label>
+                            <div class="pass-group">
+                                <input type="password" id="password" class="pass-input"
+                                    placeholder="Nhập mật khẩu của bạn">
+                                <span class="fas toggle-password fa-eye-slash" onclick="togglePassword()"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-login">
+                            <div class="alreadyuser">
+                                <h4><a class="hover-a">Quên mật khẩu?</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="form-login">
+                            <button class="btn btn-login" onclick="checkLogin()">Đăng Nhập</button>
+                        </div>
+
+                        <script>
+                            function checkLogin() {
+                                const email = document.getElementById('email').value.trim();
+                                const password = document.getElementById('password').value.trim();
+
+                                if (email === 'admin@gmail.com' && password === '12345678') {
+                                    alert('Đăng nhập thành công! 🎉');
+                                    window.location.href = 'index.html';
+                                } else {
+                                    alert('Sai email hoặc mật khẩu, vui lòng thử lại.');
+                                }
+                            }
+
+                            // 👁 Hiển thị / Ẩn mật khẩu
+                            function togglePassword() {
+                                const passInput = document.getElementById('password');
+                                const toggleIcon = document.querySelector('.toggle-password');
+
+                                if (passInput.type === 'password') {
+                                    passInput.type = 'text';
+                                    toggleIcon.classList.remove('fa-eye-slash');
+                                    toggleIcon.classList.add('fa-eye');
+                                } else {
+                                    passInput.type = 'password';
+                                    toggleIcon.classList.remove('fa-eye');
+                                    toggleIcon.classList.add('fa-eye-slash');
+                                }
+                            }
+                        </script>
+
+                        <div class="form-setlogin">
+                            <h4>Hoặc đăng ký bằng</h4>
+                        </div>
+                        <div class="form-sociallink">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/icons/google.png" class="me-2" alt="google">
+                                        Đăng ký bằng Google
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/icons/facebook.png" class="me-2" alt="google">
+                                        Đăng ký bằng Facebook
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-img">
+                    <img src="assets/img/login.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/feather.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
