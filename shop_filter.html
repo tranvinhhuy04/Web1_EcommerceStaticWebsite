@@ -178,10 +178,9 @@
 
           <!-- Nút lọc -->
           <div class="filter__actions">
-            <button type="button" onclick="window.location.href='shop_filter.html'">Lọc</button>
+            <button type="button" onclick="window.location.href='shop.html'">Lọc</button>
             <button type="reset" id="reset-button">Đặt lại</button>
           </div>
-
         </form>
       </div>
     </section>
@@ -195,8 +194,8 @@
       <!--=============== SẮP XẾP SẢN PHẨM ===============-->
       <div class="sort">
         <label for="sort-options">Sắp xếp theo:</label>
-        <select name="sort-options">
-          <option value="">Chọn tiêu chí</option>
+        <select  name="sort-options">
+          <option value="">Giá (Thấp → Cao)</option>
           <option value="rating-asc">Đánh giá (Thấp → Cao)</option>
           <option value="rating-desc">Đánh giá (Cao → Thấp)</option>
           <option value="price-asc">Giá (Thấp → Cao)</option>
@@ -206,10 +205,10 @@
         </select>
       </div>
 
-
+   
 
       <!--TỔNG SẢN PHẨM TÌM ĐƯỢC-->
-      <p class="total__products">Đã tìm thấy <span>12</span> sản phẩm phù hợp với bạn!</p>
+      <p class="total__products">Đã tìm thấy <span>5</span> sản phẩm phù hợp với bạn!</p>
       <!--LƯỚI SẢN PHẨM-->
       <div class="products__container grid">
         <div class="product__item" data-stock="in" data-categories="Tropical" data-price="35" data-rating="4.3"
@@ -250,305 +249,13 @@
               <span class="old__price">55.000 vnđ</span>
             </div>
             <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
+                      onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
+                      <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
+                    </a>
 
           </div>
         </div>
-        <!--SẢN PHẨM 2-->
-        <div class="product__item" data-stock="in" data-categories="Trà Sữa" data-price="30" data-rating="4.5"
-          data-discount="yes" data-date="2024-09-16">
-          <div class="product__banner">
-            <a href="details_HuongCam.html" class="product__images">
-              <img src="./assets/img/mt_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/mt_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge ">-15%</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Trà Sữa</span>
-            <a href="details_HuongCam.html">
-              <h3 class="product__title">Hương Socola</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.5</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">30.000 vnđ</span>
-              <span class="old__price">50.000 vnđ</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!--SẢN PHẨM 3-->
-        <div class="product__item" data-stock="in" data-categories="Cà Phê" data-price="35" data-rating="4.2"
-          data-discount="yes" data-date="2024-11-12">
-          <div class="product__banner">
-            <a href="details_HuongCam.html" class="product__images">
-              <img src="./assets/img/cf_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/cf_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge ">-15%</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Cà Phê</span>
-            <a href="details_HuongCam.html">
-              <h3 class="product__title">Vị Sài Gòn</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.2</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">35.000 vnđ</span>
-              <span class="old__price">55.000 vnđ</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!--SẢN PHẨM 4-->
-        <div class="product__item" data-stock="in" data-categories="Trà Thảo Mộc" data-price="25" data-rating="4.6"
-          data-discount="yes" data-date="2024-11-10">
-          <div class="product__banner">
-            <a href="details_HuongCam.html" class="product__images">
-              <img src="./assets/img/ht_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/ht_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge light-orange">Giảm Giá</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Trà Thảo Mộc</span>
-            <a href="details_HuongCam.html">
-              <h3 class="product__title">Hương Chanh</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.6</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">25.000 vnđ</span>
-              <span class="old__price">35.000 vnđ</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!--SẢN PHẨM 5-->
-        <div class="product__item" data-stock="in" data-categories="Kombucha" data-price="35" data-rating="4.4"
-          data-discount="yes" data-date="2024-11-11">
-          <div class="product__banner">
-            <a href="details_HuongCam.html" class="product__images">
-              <img src="./assets/img/kom_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/kom_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge ">-15%</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Kombucha</span>
-            <a href="details_HuongCam.html">
-              <h3 class="product__title">Hương Lựu Đỏ</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.4</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">35.000 vnđ</span>
-              <span class="old__price">50.000 vnđ</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!-- SẢN PHẨM 6 -->
-        <div class="product__item" data-stock="almost" data-categories="Mocktail" data-price="23" data-rating="4.3"
-          data-discount="yes" data-date="2024-06-15">
-          <div class="product__banner">
-            <a href="details_HuongCam.html" class="product__images">
-              <img src="./assets/img/sm_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/sm_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge light-blue">-22%</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Mocktail</span>
-            <a href="details_HuongCam.html">
-              <h3 class="product__title">Hương Chanh Dây</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.3</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">23.000 vnđ</span>
-              <span class="old__price">30.000 vnđ</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!--SẢN PHẨM 7-->
-        <div class="product__item" data-stock="out" data-categories="Cà Phê" data-price="35" data-rating="4.2"
-          data-discount="yes" data-date="2023-11-18">
-          <div class="product__banner">
-            <a href="details_HuongDua.html" class="product__images">
-              <img src="./assets/img/td_p2_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/td_p2_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-            <div class="product__badge light-green">-10%</div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Tropical</span>
-            <a href="details_HuongDua.html">
-              <h3 class="product__title">Hương Dứa</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.2</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">35.000 vnđ</span>
-              <span class="old__price">HẾT HÀNG</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
-        <!--SẢN PHẨM 8-->
-        <div class="product__item" data-stock="out" data-categories="Nước Tăng Lực" data-price="25" data-rating="4.3"
-          data-discount="no" data-date="2024-09-19">
-          <div class="product__banner">
-            <a href="details_HuongDua.html" class="product__images">
-              <img src="./assets/img/ed_p1_bg.png" alt="" class="product__img default" />
-              <img src="./assets/img/ed_p1_bg.png" alt="" class="product__img hover" />
-            </a>
-            <div class="product__actions">
-              <a href="#" class="action__btn" aria-label="Xem Nhanh">
-                <i class="fi fi-rs-eye"></i>
-              </a>
-              <a href="#" class="action__btn" aria-label="Thêm vào Wishlist">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-          </div>
-          <div class="product__content">
-            <span class="product__category">Nước Tăng Lực</span>
-            <a href="details_HuongDua.html">
-              <h3 class="product__title">Hương Bạc Hà</h3>
-            </a>
-            <div class="product__rating">
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i class="fi fi-rs-star"></i>
-              <i id="product-rating-text">4.3</i>
-            </div>
-            <div class="product__price flex">
-              <span class="new__price">25.000 vnđ</span>
-              <span class="old__price">HẾT HÀNG</span>
-            </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
-
-          </div>
-        </div>
+      
         <!--SẢN PHẨM 9-->
         <div class="product__item" data-stock="out" data-categories="Trà Thảo Mộc" data-price="35" data-rating="4.5"
           data-discount="yes" data-date="2024-11-15">
@@ -585,9 +292,9 @@
               <span class="old__price">HẾT HÀNG</span>
             </div>
             <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
+                      onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
+                      <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
+                    </a>
 
           </div>
         </div>
@@ -627,9 +334,9 @@
               <span class="old__price">55.000 vnđ</span>
             </div>
             <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
+                      onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
+                      <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
+                    </a>
 
           </div>
         </div>
@@ -669,9 +376,9 @@
               <span class="old__price">55.000 vnđ</span>
             </div>
             <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
+                      onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
+                      <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
+                    </a>
 
           </div>
         </div>
@@ -709,9 +416,9 @@
               <span class="new__price">33.000 vnđ</span>
             </div>
             <a href="#" class="action__btn cart__btn" aria-label="Thêm vào giỏ hàng"
-              onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
-              <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
-            </a>
+                      onclick="alert('🛒 Sản phẩm đã được thêm vào giỏ hàng!')">
+                      <img src="assets/img/shopping-bag.png" alt="Thêm vào giỏ hàng" style="width:18px;">
+                    </a>
 
           </div>
         </div>
@@ -719,14 +426,6 @@
       <!--Danh sách các trang và nút chuyển trang-->
       <ul class="pagination" id="pagination">
         <li><a href="#" class="pagination__link active">01</a></li>
-        <li><a href="#" class="pagination__link">02</a></li>
-        <li><a href="#" class="pagination__link">03</a></li>
-        <li><a href="#" class="pagination__link">04</a></li>
-        <li><a href="#" class="pagination__link">05</a></li>
-        <li><a href="#" class="pagination__link">06</a></li>
-        <li><a href="#" class="pagination__link icon">
-            <i class="fi-rs-angle-double-small-right"></i>
-          </a></li>
       </ul>
     </section>
 
