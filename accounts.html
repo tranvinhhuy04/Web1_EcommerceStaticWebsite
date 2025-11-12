@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/breakpoint.css" />
 
     <title>Sunkissed | Nước uống dinh dưỡng</title>
+    
   </head>
   <body>
   <!--=============== HEADER ===============-->
@@ -348,6 +349,28 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".account__tab");
+  const tabContents = document.querySelectorAll(".tab__content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Bỏ active ở tất cả các tab
+      tabs.forEach(t => t.classList.remove("active-tab"));
+      // Ẩn toàn bộ nội dung
+      tabContents.forEach(c => c.classList.remove("active-tab"));
+
+      // Đánh dấu tab hiện tại
+      tab.classList.add("active-tab");
+      const target = tab.getAttribute("data-target");
+      const content = document.querySelector(target);
+      if (content) content.classList.add("active-tab");
+    });
+  });
+});
+</script>
 
     <script>
       function deleteOrder(button) {
