@@ -158,21 +158,30 @@
               <h3 class="tab__header">THÔNG TIN CỦA BẠN</h3>
               <div class="tab__body">
                 <div class="tab__details">
-                  <div class="tab__info">
-                    <div class="tab__info-item">
-                      <label for="name">Họ và tên:</label>
-                      <div id="name">Trần Vĩnh Huy</div>
-                    </div>
-                    <div class="tab__info-item">
-                      <label for="dob">Ngày tháng năm sinh:</label>
-                      <div id="dob">21/02/2004</div>
-                    </div>
-      
-                    <div class="tab__info-item">
-                      <label for="address">Địa chỉ giao hàng</label>
-                      <div id="address">273 An Dương Vương, Phường Chợ Quán, TP. HCM</div>
-                    </div>
-                  </div>
+                 <div class="tab__info">
+  <div class="tab__info-item">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" value="Trần Vĩnh Huy">
+  </div>
+
+  <div class="tab__info-item">
+    <label for="dob">Ngày tháng năm sinh:</label>
+    <input type="date" id="dob" value="2004-02-21">
+  </div>
+
+  <div class="tab__info-item">
+    <label for="address">Địa chỉ giao hàng:</label>
+    <textarea id="address" rows="2">273 An Dương Vương, Phường Chợ Quán, TP. HCM</textarea>
+  </div>
+
+  <div class="tab__info-item">
+  <button type="button" class="save-btn" onclick="alert('Thông tin của bạn đã được lưu!')">
+    Lưu thông tin
+  </button>
+</div>
+
+</div>
+
       
                   <div class="tab__credentials">
                     <div class="tab__email">
