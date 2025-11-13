@@ -141,9 +141,15 @@
                 <input id="product-quantity" aria-valuenow="1" type="number" aria-label="Item Quantity" name="quantity"
                   value="1" min="1" max="99" data-quantity-input class="quantity-input">
               </div>
-              <!-- Các nút hành động cho sản phẩm -->
-              <a href="details_HuongDua.html" class="w-r__link btn--e-transparent-platinum-b-2">Xem Sản Phẩm</a>
-              <button class="w-r__link btn--e-transparent-platinum-b-2">Xóa Sản Phẩm</button>
+              <a href="details_HuongDua.html" class="w-r__link btn--e-transparent-platinum-b-2">
+  Xem Sản Phẩm
+</a>
+
+<button class="w-r__link btn--e-transparent-platinum-b-2ee"
+        onclick="alert('🗑️ Sản phẩm đã được xóa khỏi danh sách!')">
+  Xóa Sản Phẩm
+</button>
+
             </div>
           </div>
         </div>
@@ -175,7 +181,10 @@
               </div>
               <!-- Các nút hành động cho sản phẩm -->
               <a href="details_HuongCam.html" class="w-r__link btn--e-transparent-platinum-b-2">Xem Sản Phẩm</a>
-              <button class="w-r__link btn--e-transparent-platinum-b-2">Xóa Sản Phẩm</button>
+             <button class="w-r__link btn--e-transparent-platinum-b-2ee"
+        onclick="alert('🗑️ Sản phẩm đã được xóa khỏi danh sách!')">
+  Xóa Sản Phẩm
+</button>
             </div>
           </div>
         </div>
@@ -207,7 +216,10 @@
               </div>
               <!-- Các nút hành động cho sản phẩm -->
               <a href="details_HuongCam.html" class="w-r__link btn--e-transparent-platinum-b-2">Xem Sản Phẩm</a>
-              <button class="w-r__link btn--e-transparent-platinum-b-2">Xóa Sản Phẩm</button>
+             <button class="w-r__link btn--e-transparent-platinum-b-2ee"
+        onclick="alert('🗑️ Sản phẩm đã được xóa khỏi danh sách!')">
+  Xóa Sản Phẩm
+</button>
             </div>
           </div>
         </div>
@@ -265,29 +277,7 @@
             </div>
 
             <!-- Script xử lý ngay trong HTML -->
-            <script>
-              function applyVoucher(event) {
-                event.preventDefault();
-                const input = document.getElementById('voucherInput');
-                const code = input.value.trim().toUpperCase();
-
-                const validCoupons = ['SUN10', 'GIANGSINH25', 'SALE50'];
-
-                if (code === '') {
-                  alert('⚠️ Vui lòng nhập mã giảm giá trước khi áp dụng!');
-                  return false;
-                }
-
-                if (validCoupons.includes(code)) {
-                  alert(`🎉 Mã ${code} đã được áp dụng thành công!`);
-                } else {
-                  alert('❌ Mã giảm giá vừa nhập không đúng hoặc đã hết hạn, vui lòng thử lại sau.');
-                }
-
-                input.value = '';
-                return false; // Ngăn load lại trang
-              }
-            </script>
+            
 
           </div>
         </div>
